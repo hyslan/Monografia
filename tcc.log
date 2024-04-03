@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.17)  1 APR 2024 22:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.17)  2 APR 2024 21:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -877,21 +877,19 @@ a/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] [2
 ] (tcc.toc) (introducao.tex [9] [10
 
 ])
-[11] [12
+(revisao_literatura.tex [11] [12
 
-] [13] [14
+]) (metodologia.tex [13] [14
 
-] [15] [16
+]) (resultados.tex
+[15] [16
 
-] [17] [18
+]) (conclusao.tex [17] [18
 
-] (tcc.bbl [19] [20
+]) (tcc.bbl [19] [20
 
 ]
 bibitemlist
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
 ) [21]
 \tf@lof=\write4
 \openout4 = `tcc.lof'.
@@ -909,23 +907,24 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16745 strings out of 474424
- 264071 string characters out of 5741739
+ 16771 strings out of 474424
+ 264813 string characters out of 5741739
  1931496 words of memory out of 5000000
- 38814 multiletter control sequences out of 15000+600000
- 590790 words of font info for 75 fonts, out of 8000000 for 9000
+ 38825 multiletter control sequences out of 15000+600000
+ 593638 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,107p,347b,511s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,107p,345b,511s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmr12.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier
 /ucrr8a.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helve
 tic/uhvb8a.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/urw/he
 lvetic/uhvr8a.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/urw
 /times/utmb8a.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/urw
-/times/utmr8a.pfb>
-Output written on tcc.pdf (21 pages, 94749 bytes).
+/times/utmr8a.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on tcc.pdf (21 pages, 103776 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
