@@ -1,0 +1,139 @@
+\documentclass[
+12pt,
+ a4paper,
+ chapter=TITLE,
+  section=TITLE,
+   subsection=TITLE,
+    subsubsection=TITLE,
+    brazil,
+    openright,
+    twoside
+    ]{abntex2}
+    
+% Pacotes
+\usepackage[alf]{abntex2cite}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{color} 
+
+% Configurações de margens
+\geometry{
+	a4paper,
+	left=3cm,
+	right=2cm,
+	top=3cm,
+	bottom=2cm
+}
+
+% Dados do TCC/Monografia
+\titulo{Transformações Lineares e suas aplicações}
+\autor{Hyslan Silva Cruz\\Iara Regina Grilo Papais}
+\orientador[Orientadora:]{Lorena Salvi Stringheta}
+\instituicao{Universidade Virtual do Estado de São Paulo} 
+\local{Suzano}
+\data{2024}
+\tipotrabalho{Monografia}
+\preambulo{Monografia de graduação à Universidade Virtual do Estado de São Paulo, como requisito parcial para a obtenção do título de Licenciatura em Matemática.
+	
+	Orientadora: \imprimirorientador}
+
+
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Início do Documento
+\begin{document}
+	
+	\selectlanguage{brazil}
+	
+	% Retira espaço extra obsoleto entre as frases.
+	\frenchspacing 
+	
+	% Capa
+	\imprimircapa
+	
+	% Folha de Rosto
+	\imprimirfolhaderosto
+	
+	% Resumo
+	% resumo em português
+	\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+	\begin{resumo}
+		\textbf{Resumo}
+		
+		\textbf{PALAVRAS-CHAVE: Transformação Linear, Álgebra Linear, Matrizes}
+	\end{resumo}
+		
+	
+	% Abstract
+	% resumo em inglês
+	\begin{resumo}[Abstract]
+		\begin{otherlanguage*}{english}
+			This is the english abstract.
+			
+			\vspace{\onelineskip}
+			
+			\noindent 
+			\textbf{Keywords}: latex. abntex. text editoration.
+		\end{otherlanguage*}
+	\end{resumo}
+	
+	% inserir lista de tabelas
+	% ---
+	\pdfbookmark[0]{\listtablename}{lot}
+	\listoftables*
+	\cleardoublepage
+	% ---
+	
+	% Lista de símbolos
+	\begin{simbolos}
+		\item[$ \mathbb{R} $] Conjunto dos números reais.
+	\end{simbolos}
+	
+	
+	% Sumário
+	\pdfbookmark[0]{\contentsname}{toc}
+	\tableofcontents
+	\cleardoublepage
+	
+	
+	% Capítulos
+	\textual
+	
+	\input{introducao.tex}
+		
+	\input{revisao_literatura.tex}
+	
+	\input{metodologia.tex}
+	
+	\input{resultados.tex}
+	
+	% Conclusão
+	\input{conclusao.tex}
+		
+	% Referências Bibliográficas
+	\bibliographystyle{abntex2-alf}
+	\bibliography{references.bib}
+		
+\end{document}
