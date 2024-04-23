@@ -1,16 +1,19 @@
 \documentclass[
 12pt,
  a4paper,
- chapter=TITLE,
-  section=TITLE,
-   subsection=TITLE,
-    subsubsection=TITLE,
+ % chapter=TITLE,
+  % section=TITLE,
+   % subsection=TITLE,
+    % subsubsection=TITLE,
     brazil,
+    % english,
     openright,
     twoside
     ]{abntex2}
     
 % Pacotes
+% ---
+\usepackage[brazilian,hyperpageref]{backref}
 \usepackage[alf]{abntex2cite}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -24,6 +27,8 @@
 \usepackage{setspace}
 \usepackage{microtype}
 \usepackage{color} 
+% ---
+
 
 % Configurações de margens
 \geometry{
@@ -41,7 +46,7 @@
 \instituicao{Universidade Virtual do Estado de São Paulo} 
 \local{Suzano}
 \data{2024}
-\tipotrabalho{Monografia}
+\tipotrabalho{TCC}
 \preambulo{Monografia de graduação à Universidade Virtual do Estado de São Paulo, como requisito parcial para a obtenção do título de Licenciatura em Matemática.
 	
 	Orientadora: \imprimirorientador}
@@ -80,9 +85,9 @@
 	% resumo em português
 	\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 	\begin{resumo}
-		\textbf{Resumo}
+		Resumo de nosso trabalho.
 		
-		\textbf{PALAVRAS-CHAVE: Transformação Linear, Álgebra Linear, Matrizes}
+		\textbf{Palavras-chave: Transformação Linear, Álgebra Linear, Matrizes}
 	\end{resumo}
 		
 	
@@ -109,12 +114,13 @@
 	% Lista de símbolos
 	\begin{simbolos}
 		\item[$ \mathbb{R} $] Conjunto dos números reais.
+		\item[$\exists$] Símbolo de existe.
 	\end{simbolos}
 	
 	
 	% Sumário
 	\pdfbookmark[0]{\contentsname}{toc}
-	\tableofcontents
+	\tableofcontents*
 	\cleardoublepage
 	
 	

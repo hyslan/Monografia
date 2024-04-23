@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.17)  7 APR 2024 12:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.17)  22 APR 2024 21:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,6 +598,8 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 \ABNTEXsignwidth=\skip198
 \ABNTEXsignthickness=\skip199
 \ABNTEXsignskip=\skip256
+) (C:\Users\hysla\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\backref.sty
+Package: backref 2023-11-26 v1.44 Bibliographical back referencing
 )
 (C:\Users\hysla\AppData\Local\Programs\MiKTeX\tex/latex/abntex2\abntex2cite.sty
 Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
@@ -799,8 +801,8 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
 (C:\Users\hysla\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 )
-Package color Info: Redefining color blue on input line 53.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 66
+Package color Info: Redefining color blue on input line 58.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 71
 .
  (C:\Users\hysla\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -808,25 +810,25 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-Package hyperref Info: Link coloring OFF on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+Package hyperref Info: Link coloring OFF on input line 71.
 \myptabbox=\box63
 \myptabboxwidth=\skip264
 
@@ -889,26 +891,26 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 66.
-Package microtype Info: Applying patch `item' on input line 66.
-Package microtype Info: Applying patch `toc' on input line 66.
-Package microtype Info: Applying patch `eqnum' on input line 66.
-Package microtype Info: Applying patch `footnote' on input line 66.
-Package microtype Info: Applying patch `verbatim' on input line 66.
+LaTeX Info: Redefining \microtypecontext on input line 71.
+Package microtype Info: Applying patch `item' on input line 71.
+Package microtype Info: Applying patch `toc' on input line 71.
+Package microtype Info: Applying patch `eqnum' on input line 71.
+Package microtype Info: Applying patch `footnote' on input line 71.
+Package microtype Info: Applying patch `verbatim' on input line 71.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 66.
+LaTeX Info: Redefining \showhyphens on input line 71.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (C:\Users\hysla\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 74
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 79
 .
 
 (C:\Users\hysla\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
@@ -929,7 +931,7 @@ a/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] [2
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
 
 
 (C:\Users\hysla\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -938,7 +940,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\hysla\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
 
 
 (C:\Users\hysla\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -951,7 +953,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 	
+l.83 	
        [1
 
 
@@ -960,7 +962,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 	
+l.83 	
        [2
 
 ] [3] [4
@@ -985,54 +987,88 @@ Package babel Info: Importing basic data for english
 
 ] [14
 
-]) (metodologia.tex [15]
-[16
+]
+<exemplo01.png, id=99, 166.01073pt x 102.92665pt>
+File: exemplo01.png Graphic file (type png)
+<use exemplo01.png>
+Package pdftex.def Info: exemplo01.png  used on input line 24.
+(pdftex.def)             Requested size: 166.01031pt x 102.92638pt.
+ [15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.30 \noindent
+              \textbf{Exemplo 02:} O exemplo anterior, tratou-se de plotar u...
+ <./exemplo01.png>]
+<exemplo02.png, id=117, 1481.535pt x 863.225pt>
+File: exemplo02.png Graphic file (type png)
+<use exemplo02.png>
+Package pdftex.def Info: exemplo02.png  used on input line 41.
+(pdftex.def)             Requested size: 455.24411pt x 265.23924pt.
+ [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 	\item P
+             ara quaisquer $k \in R$ e $v \in V$, $F(kv) = kF(v)$. <./exemplo02
+.png>]) (metodologia.tex [17] [18
 
-]) (resultados.tex [17] [18
+]) (resultados.tex [19] [20
 
-]) (conclusao.tex [19] [20
+]) (conclusao.tex
+[21] [22
 
-]) (main.bbl [21]
-[22
+]) (main.bbl (main.brf)
+\tf@brf=\write4
+\openout4 = `main.brf'.
+
+ [23] [24
 
 ]
 bibitemlist
 
 LaTeX Warning: Empty `thebibliography' environment on input line 8.
 
-) [23]
-\tf@lot=\write4
-\openout4 = `main.lot'.
+) [25]
+\tf@lot=\write5
+\openout5 = `main.lot'.
 
-\tf@toc=\write5
-\openout5 = `main.toc'.
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
  (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+Package rerunfilecheck Info: File `main.brf' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 19024 strings out of 474424
- 303124 string characters out of 5741739
- 1933496 words of memory out of 5000000
- 40916 multiletter control sequences out of 15000+600000
- 596430 words of font info for 147 fonts, out of 8000000 for 9000
+ 19277 strings out of 474424
+ 307346 string characters out of 5741739
+ 1935496 words of memory out of 5000000
+ 41122 multiletter control sequences out of 15000+600000
+ 607116 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,107p,1003b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,107p,1003b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr12.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/hysla/AppData/Local/Program
-s/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/hysla/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/hysla/AppData/Local/P
-rograms/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/hysla/AppData/Local/P
-rograms/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (25 pages, 118678 bytes).
+cmex10.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/hysla/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/hysla/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/hysla/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/hysla/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/hysla
+/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/hysla
+/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/hysla
+/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (27 pages, 503987 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 42601 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 54891 words of extra memory for PDF output out of 61914 (max. 10000000)
 
