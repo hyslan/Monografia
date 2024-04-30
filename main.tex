@@ -7,7 +7,7 @@
     % subsubsection=TITLE,
     brazil,
     % english,
-    openright,
+    % openright,
     twoside
     ]{abntex2}
     
@@ -114,13 +114,14 @@
 	% Lista de símbolos
 	\begin{simbolos}
 		\item[$ \mathbb{R} $] Conjunto dos números reais.
-		\item[$\exists$] Símbolo de existe.
+		\item[$\exists$] Existe.
+		\item[$\in$] Pertence.
 	\end{simbolos}
 	
 	
 	% Sumário
 	\pdfbookmark[0]{\contentsname}{toc}
-	\tableofcontents
+	\tableofcontents*
 	\cleardoublepage
 	
 	
@@ -141,5 +142,6 @@
 	% Referências Bibliográficas
 	\bibliographystyle{abntex2-alf}
 	\bibliography{references.bib}
+
 		
 \end{document}
