@@ -114,8 +114,59 @@ Assim sendo, constata-se que o conjunto de todas as matrizes simétricas configu
 Dentro de um espaço vetorial, conforme demonstrado que podemos ter subconjuntos de espaços vetoriais, é possível a obtenção de novos vetores a partir de vetores dados \cite{boldrini1980}.
 
 \noindent\textbf{Definição 03:} Sejam $V$ um espaço vetorial $\mathbb{R}$, $v_1, v_2, \ldots, v_n \in V$ e $a_1, \ldots, a_n \in \mathbb{R}$. Então, o vetor $v = a_1v_1 + a_2v_2 + \ldots + a_nv_n$ é um elemento de $V$ podendo ser chamado combinação linear de $v_1, \ldots, v_n$.
-% _{m \times n}
 
+Se $V \subset W$, podemos adotar a notação $W = [v_1, \ldots, v_n]$, onde expandindo-o
+
+\centering$W = [v_1, \ldots, v_n] = {v \in V; v = a_1v_1 + \ldots + a_nv_n, a_i \in \mathbb{R}, 1 \leqslant i \leqslant n}$
+
+\noindent\textbf{Exemplo 07:} Presuma um vetor $V = \mathbb{R}^3, v \in V, v \neq 0$. Se imaginarmos sua reta que contém o vetor $v$, onde, $[v] = {av: a \in \mathbb{R}}$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.90]{cb_exemplo7.png}
+	\caption{Retirado de \cite{boldrini1980}, pg. 113.}
+\end{figure}
+
+\noindent\textbf{Exemplo 08:} Se obtemos $v_1, v_2 \in \mathbb{R}^3$ e $v_3 \in [v_1, v_2]$, então $[v_1, v_2, v_3] = [v_1, v_2]$, então $v_3$ é um combinação linear de  $v_1$ e $v_2$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.90]{cb_exemplo8.png}
+	\caption{Retirado de \cite{boldrini1980}, pg. 113.}
+\end{figure}
+
+\noindent\textbf{Exemplo 09:} Consideremos o espaço vetorial $\mathbb{R}^3$ e os vetores $\mathbf{v} = \begin{pmatrix} 2 \\ 3 \\ 1 \end{pmatrix}$ e $\mathbf{w} = \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}$. Sejam também os escalares $a = 3$ e $b = -1$. Então temos, os seguintes elementos.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		\textbf{Vetor} & \textbf{Componentes} & \textbf{Escalar} \\ \midrule
+		$\mathbf{v}$   & $ 2, 3, 1$   & $3$              \\
+		$\mathbf{w}$   & $ 1, -1, 2$  & $-1$             \\ \bottomrule
+	\end{tabular}
+	\caption{Vetores e escalares utilizados na combinação linear}
+\end{table}
+
+Definimos a combinação linear dos vetores $\mathbf{v}$ e $\mathbf{w}$ como:
+
+\[
+a\mathbf{v} + b\mathbf{w} = 3 \begin{pmatrix} 2 \\ 3 \\ 1 \end{pmatrix} + (-1) \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}.
+\]
+
+Aplicando as operações, obtemos:
+
+\[
+a\mathbf{v} + b\mathbf{w} = \begin{pmatrix} 6 \\ 9 \\ 3 \end{pmatrix} + \begin{pmatrix} -1 \\ 1 \\ -2 \end{pmatrix} = \begin{pmatrix} 6 - 1 \\ 9 + 1 \\ 3 - 2 \end{pmatrix} = \begin{pmatrix} 5 \\ 10 \\ 1 \end{pmatrix}.
+\]
+
+Portanto, a combinação linear dos vetores $\mathbf{v}$ e $\mathbf{w}$ com os coeficientes $a = 3$ e $b = -1$ é o vetor 
+
+\centering$\begin{pmatrix} 5 \\ 10 \\ 1 \end{pmatrix}$
+
+\section{Dependência e Independência Linear}
+
+% _{m \times n}
 % subinscrito
 % _
 % expoente com mais de um dígito
