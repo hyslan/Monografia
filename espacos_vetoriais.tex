@@ -45,7 +45,7 @@ A = \begin{bmatrix}
 
 \noindent\textbf{Exemplo 03:} Consideremos $n-uplas$ de números reais.
 
-$V = \mathbb{R}^n = {(x_1, x_2, \ldots, x_n); x_i \in \mathbb{R}}$
+$V = \mathbb{R}^n = \{(x_1, x_2, \ldots, x_n); x_i \in \mathbb{R}\}$
 
 e se $u = (x_1, x_2, \ldots, x_n), v = (y_1, y_2, \ldots, y_n)$ e $a \in \mathbb{R}$,
 
@@ -68,7 +68,7 @@ Nesta seção iremos introduzir conceitos no estudo de espaço vetorial para sub
 \noindent\textbf{Demonstração:} Suponhamos que $W$ seja um subconjunto não vazio de $V$, tal que, $c\alpha + \beta$ pertença a $W$ para todos os vetores $\alpha$, $\beta$ em $W$ e todos escalares $c$ em $F$. Como $W$ é não vazio, existe um vetor $\rho$ em $W$, logo $(-1) \rho + \rho = 0$ está em $W$. Então se $\alpha$ é um vetor arbitrário em $W$ e $c$ é um escalar arbitrário, o vetor $c\alpha = c\alpha + 0$ está em $W$. Em particular $(-l)\alpha = -\alpha$ está em $W$. Finalmente se $\alpha$ e $\beta$ estão em $W$, então $\alpha + \beta = 1\alpha + \beta$ está em $W$.
 Assim, $W$ é um subespaço de $V$. \nocite{hoffman1979}
 
-\noindent\textbf{Exemplo 04:} Considere o espaço vetorial $\mathbb{R}^3$. O conjunto de todos os vetores que residem no plano $xy$, ou seja, ${(x, y, 0) \mid x, y \in \mathbb{R}}$, forma um subespaço vetorial de $\mathbb{R}^3$.
+\noindent\textbf{Exemplo 04:} Considere o espaço vetorial $\mathbb{R}^3$. O conjunto de todos os vetores que residem no plano $xy$, ou seja, $\{(x, y, 0) \mid x, y \in \mathbb{R}\}$, forma um subespaço vetorial de $\mathbb{R}^3$.
 
 Se o conjunto dado forma um subespaço vetorial de $\mathbb{R}^3$, precisamos verificar as três propriedades fundamentais:
 
@@ -82,7 +82,7 @@ Se o conjunto dado forma um subespaço vetorial de $\mathbb{R}^3$, precisamos ve
 
 Então, o conjunto de todos os vetores $(x, y, 0)$ com $x, y \in \mathbb{R}$ forma um subespaço vetorial de $\mathbb{R}^3$.
 
-\noindent\textbf{Exemplo 05:} No espaço vetorial das funções reais de uma variável real, $V = {f(x) \mid f: \mathbb{R} \rightarrow \mathbb{R}}$, considere o conjunto de todas as funções lineares, ou seja, ${f(x) = mx + b \mid m, b \in \mathbb{R}}$. Esse conjunto forma um subespaço vetorial de $V$. Novamente, você pode verificar as propriedades para confirmar.
+\noindent\textbf{Exemplo 05:} No espaço vetorial das funções reais de uma variável real, $V = \{f(x) \mid f: \mathbb{R} \rightarrow \mathbb{R}\}$, considere o conjunto de todas as funções lineares, ou seja, $\{f(x) = mx + b \mid m, b \in \mathbb{R}\}$. Esse conjunto forma um subespaço vetorial de $V$. Novamente, você pode verificar as propriedades para confirmar.
 
 Se o conjunto dado forma um subespaço vetorial de $V$, novamente precisamos verificar as três propriedades fundamentais:
 
@@ -117,7 +117,7 @@ Dentro de um espaço vetorial, conforme demonstrado que podemos ter subconjuntos
 
 Se $V \subset W$, podemos adotar a notação $W = [v_1, \ldots, v_n]$, onde expandindo-o
 
-\centering$W = [v_1, \ldots, v_n] = {v \in V; v = a_1v_1 + \ldots + a_nv_n, a_i \in \mathbb{R}, 1 \leqslant i \leqslant n}$
+\centerline{$W = [v_1, \ldots, v_n] = \{v \in V; v = a_1v_1 + \ldots + a_nv_n, a_i \in \mathbb{R}, 1 \leqslant i \leqslant n\}$}
 
 \noindent\textbf{Exemplo 07:} Presuma um vetor $V = \mathbb{R}^3, v \in V, v \neq 0$. Se imaginarmos sua reta que contém o vetor $v$, onde, $[v] = {av: a \in \mathbb{R}}$
 
@@ -162,9 +162,38 @@ a\mathbf{v} + b\mathbf{w} = \begin{pmatrix} 6 \\ 9 \\ 3 \end{pmatrix} + \begin{p
 
 Portanto, a combinação linear dos vetores $\mathbf{v}$ e $\mathbf{w}$ com os coeficientes $a = 3$ e $b = -1$ é o vetor 
 
-\centering$\begin{pmatrix} 5 \\ 10 \\ 1 \end{pmatrix}$
+\centerline{$\begin{pmatrix} 5 \\ 10 \\ 1 \end{pmatrix}$}
 
 \section{Dependência e Independência Linear}
+Dado a combinação linear, devemos saber, a priori, se algum desses vetores não é combinação linear dos outros e assim por diante. Para isto precisamos saber sua dependência e independência linear.\nocite{camargo2005}
+
+\noindent\textbf{Definição 03:} Sejam $\mathbf{V}$ um espaço vetorial e $\mathbf{v}_1, \ldots, \mathbf{v}_n \in \mathbf{V}$. Dizemos que o conjunto ${\mathbf{v}_1, \ldots, \mathbf{v}_n}$ é linearmente independente (\textbf{LI}), ou que os vetores $\mathbf{v}_1, \ldots, \mathbf{v}_n$ são \textbf{LI}, se a equação
+
+\centerline{$a_1\mathbf{v}_1 + \ldots + a_n\mathbf{v}_n = 0$}
+
+\noindent implica que $a_1 = a_2 = \ldots = a_n = 0$. No caso em que exista algum $a_i \neq 0$ dizemos que ${v_1, \ldots, v_n}$ é linearmente dependente (\textbf{LD}), ou que os vetores $\mathbf{v}_1, \ldots, \mathbf{v}_n$ são \textbf{LD}.
+
+\noindent\textbf{Teorema 02:} Uma combinação linear é \textbf{LD} se, e somente se um destes vetores for uma combinação linear dos outros.
+
+\centerline{$\{\mathbf{v}_1, \ldots,  \mathbf{v}_n \} =$ \textbf{LD} $\iff \exists i \mid \sum_{i \neq j} c_i \mathbf{v}_i$}
+
+\noindent\textbf{Demonstração:} Sejam $\mathbf{v}_1, \ldots, \mathbf{v}_n$ \textbf{LD} e $a_1\mathbf{v}_1 + \ldots + a_j\mathbf{v}_j + \ldots + a_n\mathbf{v}_n = 0$
+
+Um dos coeficientes deve ser diferente de zero. Suponhamos que seja $a_j \neq 0$. Então 
+
+\centerline{$\mathbf{v}_j = -\frac{1}{a_j}(a_1\mathbf{v}_1 + \ldots + a_{j - 1}\mathbf{v}_{j - 1} + + a_{j + 1}\mathbf{v}_{j + 1} + \ldots + a_n\mathbf{v)_n}$}
+
+\centerline{ e portanto $\mathbf{v}_j = -\frac{a_1}{a_j}\mathbf{v}_1 + \ldots -\frac{a_n}{a_j}\mathbf{v}_n$}
+
+Logo, $\mathbf{v}_j$ é uma combinação linear dos outros vetores.
+
+\noindent\textbf{Exemplo 10:} Sejam $\mathbf{V} = \mathbb{R}^3$ e $v_1, v_2 \in \mathbf{V}$, $\{\mathbf{v}_1, \mathbf{v}_2\}$ é \textbf{LD} $\iff \mathbf{v}_1$ e $\mathbf{v}_2$ estiverem na mesma reta, que passa pela origem. $(\mathbf{v}_1 = \lambda\mathbf{v}_2)$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.90]{cb_exemplo10.png}
+	\caption{Retirado de \cite{boldrini1980}, pg. 115.}
+\end{figure}
 
 % _{m \times n}
 % subinscrito
