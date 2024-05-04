@@ -3,13 +3,18 @@ Neste capítulo, iremos tratar sobre um tipo especial de função ou aplicação
 
 Nosso estudo das funções vetoriais lineares em questão, será focado, nas transformações lineares.
 
-\noindent\textbf{Definição 04:} Sejam V e W dois espaços vetoriais. Uma transformação linear (aplicação linear) é uma função de V em W, $F:V \rightarrow W$, que satisfaz as seguintes condições:
+\noindent\textbf{Definição 04:} Sejam $\mathbf{V}$ e $\mathbf{W}$ dois espaços vetoriais. Uma transformação linear (aplicação linear) é uma função de $\mathbf{V}$ em $\mathbf{W}$, $\mathbf{F}: \mathbf{V} \rightarrow \mathbf{W}$, que satisfaz as seguintes condições:
+
 \begin{enumerate}
-	\item Para quaisquer $u$ e $v$ em $V$, $F(u + v) = F(u) + F(v)$.
-	\item Para quaisquer $k \in \mathbb{R}$ e $v \in V$, $F(kv) = kF(v)$.
+	\item Para quaisquer $\mathbf{u}$ e $\mathbf{v}$ em $\mathbf{V}$, $\mathbf{F}(\mathbf{u} + \mathbf{v}) = \mathbf{F}(u) + \mathbf{F}(v)$. \textbf{Homogeneidade}
+	\item Para quaisquer $k \in \mathbb{R}$ e $\mathbf{v} \in \mathbf{V}$, $F(k\mathbf{v}) = k\mathbf{F}(\mathbf{v})$. \textbf{Aditividade}
 \end{enumerate}	
-\noindent\centerline{$\forall\mathbf{v}, \mathbf{v} \in \mathbf{V}$ e $\forall k \in \mathbb{R}$.}
-Para se dizer que $\mathbf{T}$ é uma transformação linear do espaço vetorial $\mathbf{V}$ no espaço vetorial $\mathbf{W}$, será denotado por $\mathbf{T}:\mathbf{V}\longrightarrow\mathbf{W}$, onde $\mathbf{T}$ é a função, cada vetor $\mathbf{v} \in \mathbf{V}$ tem uma só imagem $\mathbf{w} \in \mathbf{W}$, indicado por $\mathbf{w} = \mathbf{T}(\mathbf{v})$.
+
+No caso especial em que $\mathbf{V} = \mathbf{W}$, a transformação linear é denominada \textbf{operador linear} do espaço vetorial $\mathbf{V}$ \cite{anton2010elementary}.
+
+\noindent\centerline{Válido em: $\forall \mathbf{v}, \mathbf{v} \in \mathbf{V}$ e $\forall k \in \mathbb{R}$. }
+
+Trataremos $\mathbf{F}$ como $\mathbf{T}$ por convenção daqui em diante. Para se dizer que $\mathbf{T}$ é uma transformação linear do espaço vetorial $\mathbf{V}$ no espaço vetorial $\mathbf{W}$, será denotado por $\mathbf{T}:\mathbf{V}\longrightarrow\mathbf{W}$, onde $\mathbf{T}$ é a função, cada vetor $\mathbf{v} \in \mathbf{V}$ tem uma só imagem $\mathbf{w} \in \mathbf{W}$, indicado por $\mathbf{w} = \mathbf{T}(\mathbf{v})$.
 
 Tomemos por dois conjuntos de vetores, $\mathbf{V} = \mathbb{R}^2$ e $\mathbf{W} = \mathbb{R}^3$.
 
@@ -41,13 +46,16 @@ Segue a imagem em $\mathbb{R}^3$:
 	\node[centered] at (5,-1) {$(0,0,0)$};
 	
 	% Relations
-	\draw[-latex, black] (0.5,1) -- (4,1);
-	%\draw[-latex,cyan] (a) -- (p);
-	%\draw[-latex,cyan] (c) -- (p);
-	%\draw[-latex,cyan] (d) -- (s);
-	%\draw[-latex,cyan] (e) -- (q);
+	\draw[-latex, black] (0.5,1) -- node[midway, above] {$\mathbf{T}$} (4.5,1);
+	\draw[-latex, black] (0.5, 0) -- node[midway, above] {$\mathbf{T}$} (4.5, 0);
+	\draw[-latex, black] (0.5, -1) -- node[midway, above] {$\mathbf{T}$} (4.5, -1);
 	
 	% Label
-	\node[below] at (2.5,-2.5) {Uma função $\mathbf{T}: A \longrightarrow B$ com $\mathbf{T}=\{(a,p),(c,p),(c,s),(d,s),(e,q)\}$};
+	\node[below] at (2.5,-2.5) {Uma função $\mathbf{T}: \mathbb{R}^2 \longrightarrow \mathbb{R}^3$ com $\mathbf{T}=\{(x, y, x + y)\}$};
 \end{tikzpicture}
-	
+
+\noindent\textbf{Exemplo 12:} Se tomarmos um vetor arbitrário e fazemos uma transformação linear idêntica, ou seja, $1\alpha$ = $\alpha$, é uma transformação linear de $\mathbf{V}$ em $\mathbf{V}$. A transformação é definida por $0\alpha = 0$, é também uma transformação linear de $\mathbf{V}$ em $\mathbf{V}$ \cite{hoffman1979}.
+
+De acordo com o exemplo acima, percebe-se, que será uma função onde o gráfico passa a reta pela origem se supormos uma função afim, $\mathbb{R}^1$ em $\mathbb{R}^1$. Uma transformação linear mantém combinações lineares $W = [\mathbf{v}_1, \ldots, \mathbf{v}_n]$ são vetores que pertencem a $\mathbf{V}$ e possui seus escalares $c_1, \ldots, c_n$, então:
+
+\centerline{$\mathbf{T}(c_1\mathbf{v}_1, \ldots, c_n\mathbf{v}_n) = \mathbf{T}(c_1\mathbf{v}_1 + c_2\mathbf{v}_2) = c_1(\mathbf{T}\mathbf{v}_1) + c_2(\mathbf{T}\mathbf{v}_2)$}

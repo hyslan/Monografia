@@ -5,8 +5,8 @@
   % section=TITLE,
    % subsection=TITLE,
     % subsubsection=TITLE,
+    english,
     brazil,
-    % english,
     % openright,
     % twoside
     oneside
@@ -42,6 +42,22 @@
 	bottom=2cm
 }
 
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+	%
+	\or
+	Citado na página #2.%
+	\else
+	Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
 % Dados do TCC/Monografia
 \titulo{Transformações Lineares e suas aplicações}
 \autor{Hyslan Silva Cruz\\Iara Regina Grilo Papais}
@@ -51,14 +67,39 @@
 \data{2024}
 \tipotrabalho{TCC}
 \preambulo{Monografia de graduação à Universidade Virtual do Estado de São Paulo, como requisito parcial para a obtenção do título de Licenciatura em Matemática.
-	
-	Orientadora: \imprimirorientador}
+	\\Orientadora: \imprimirorientador}
 
 
 % Configurações de aparência do PDF final
-
 % alterando o aspecto da cor azul
 \definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+	%pagebackref=true,
+	pdftitle={\@title}, 
+	pdfauthor={\@author},
+	pdfsubject={\imprimirpreambulo},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=black,          	% color of internal links
+	citecolor=black,        		% color of links to bibliography
+	filecolor=magenta,      		% color of file links
+	urlcolor=blue,
+	bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
+% em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
+\makeatletter
+\setlength{\@fptop}{5pt} % Set distance from top of page to first float
+\makeatother
+% ---
 
 % --- 
 % Espaçamentos entre linhas e parágrafos 
@@ -78,11 +119,67 @@
 	% Retira espaço extra obsoleto entre as frases.
 	\frenchspacing 
 	
+	
+	\renewcommand{\imprimircapa}{%
+		\begin{capa}%
+			\center
+			{\ABNTEXchapterfont\large\imprimirautor}
+			\vspace*{\fill}
+			
+			{\ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo}
+			
+			\vspace*{5cm}
+			\href{teste.com.br}{\textbf{Link do vídeo}}
+			\vspace*{\fill}
+			
+			{\large\imprimirlocal}
+			\par
+			{\large\imprimirdata}
+			\vspace*{1cm}
+		\end{capa}
+	}
 	% Capa
 	\imprimircapa
+	% \href{teste.com.br}{video}
 	
 	% Folha de Rosto
 	\imprimirfolhaderosto
+	
+	% ---
+	% Dedicatória
+	% ---
+	\begin{dedicatoria}
+		\vspace*{\fill}
+		\centering
+		\noindent
+		\textit{ Este trabalho é dedicado às crianças adultas que,\\
+			quando pequenas, sonharam em se tornar cientistas.} \vspace*{\fill}
+	\end{dedicatoria}
+	% ---
+	
+	% ---
+	% Agradecimentos
+	% ---
+	\begin{agradecimentos}
+		Os agradecimentos principais são direcionados à...
+	\end{agradecimentos}
+	% ---
+	
+	% ---
+	% Epígrafe
+	% ---
+	\begin{epigrafe}
+		\vspace*{\fill}
+		\begin{flushright}
+			\textit{``Hoje, ainda almejamos saber por que\\
+				estamos aqui e de onde viemos.O desejo\\
+				profundo da humanidade pelo	conhecimento é\\
+				justificativa suficiente para nossa busca contínua.\\
+				(Stephen Hawking)}
+		\end{flushright}
+	\end{epigrafe}
+	% ---
+	
 	
 	% Resumo
 	% resumo em português
@@ -103,7 +200,7 @@
 			\vspace{\onelineskip}
 			
 			\noindent 
-			\textbf{Keywords}: latex. abntex. text editoration.
+			\textbf{Keywords}: Linear Transformation, Linear Algebra. Matrices.
 		\end{otherlanguage*}
 	\end{resumo}
 	
