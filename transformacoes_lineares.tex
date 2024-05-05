@@ -60,3 +60,37 @@ De acordo com o exemplo acima, percebe-se, que será uma função onde o gráfic
 
 \centerline{$\mathbf{T}(c_1\mathbf{v}_1, \ldots, c_n\mathbf{v}_n) = \mathbf{T}(c_1\mathbf{v}_1 + c_2\mathbf{v}_2) = c_1(\mathbf{T}\mathbf{v}_1) + c_2(\mathbf{T}\mathbf{v}_2)$}
 
+\noindent\textbf{Exemplo 13:} Tomemos um caso que desejamos dobrar nosso espaço vetorial, dado um vetor $\mathbf{V} = (2, 2); \mathbf{V} in \mathbb{R}^2$, a transformação linear será dada por, $\mathbf{T}(x, y) = (2x, 2y) in \mathbb{R}^2$. Nosso domínio e contradomínio está em $\mathbb{R}^2$, portanto o resultado será por $\mathbf{W} = (2 \times 2, 2 \times 2) \therefore \mathbf{W} = (4, 4)$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.30]{t_exemplo13.png}
+	\caption{Exemplo 13.}
+\end{figure}
+
+Para uma matriz de transformação linear $\mathbf{T}$ de $\mathbf{V}$ em si mesma, existe uma matriz única $\mathbf{A}$ de dimensão $ n \times n$ que representa $\mathbf{T}$. Essa matriz é definida pela seguinte propriedade:
+
+\centerline{$\mathbf{T}(\mathbf{v} = \mathbf{A}\mathbf{v})$}
+
+\noindent para todo vetor $\mathbf{v}$ em $\mathbf{V}$. A matriz $\mathbf{A}$ é chamada de matriz de transformação de $\mathbf{T}$.
+
+% Primeira aplicação citada da transforamação
+Uma outra aplicação importante da transformação linear é no campo da geometria em uso de operações como rotações, reflexões e projeções. Considere o espaço vetorial bidimensional $\mathbb{R}^2$ com base canônica $\mathbf{e}_1 = (1, 0)$ e $\mathbf{e}_2 = (0, 1)$. A rotação de 90 graus no sentido anti-horário pode ser representada pela seguinte matriz de transformação:
+
+\centerline{$\mathbf{R} = [[0, 1], [-1, 0]]$}
+
+A matriz $\mathbf{R}$ chamada de matriz de rotação, possui algumas propriedades:
+
+\begin{enumerate}
+	\item \textbf{Ortogonalidade:} A matriz $\mathbf{R}$ é ortogonal, ou seja sua transporta é inversa:
+	
+	\centerline{$\mathbf{R}^T = \mathbf{R}^{-1}$}
+	\item \textbf{Determinante:} O determinante da matriz $\mathbf{R}$ é igual a $-1$.
+	
+	\centerline{$\det(\mathbf{R}) = -1$}
+\end{enumerate}
+
+Ao rotacionar um vetor $\mathbf{v} = (x, y)$ em 90 graus  no sentido anti-horário, basta aplicar a matriz de rotação em $\mathbf{v}$.
+
+\centerline{$\mathbf{v}' = \mathbf{R} \times \mathbf{v} = [[-1, 0], [0, -1]] \times [x, y] = [y, -x]$}
+
