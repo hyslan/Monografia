@@ -1,2 +1,54 @@
 \chapter{Aplicações de Transformações Lineares}
-Aguardando pela Caroline Pires...
+	As aplicações lineares pode ser usado em diversas áreas, como:
+
+\texbf{Gráficos Computacionais e processamento de imagem:} nesta área as transformações lineares são frequentemente usadas para rotacionar, escalar e transladar objetos ou imagens. Elas desempenham um papel crucial em transformações geométricas que são aplicados para criar efeitos em jogos, simulações e edições de imagens. 
+
+\textbf{Processamento de sinal e telecomunicações:} As transformações lineares são usadas em processamento de sinal para realizar operações como filtragem, modulação e demodulação. Elas são aplicadas em sistemas de comunicações como modulação de amplitude, modulação de frequência e modulação de fase, para transmitir e receber sinais de forma eficiente.  
+
+\textbf{Análise de dados e aprendizado de máquina:} Em análise de dados e aprendizado de máquinas, as transformações lineares são usadas para representar e transformar conjunto de dados. Por exemplo, a análise de componentes principais (PCA) envolve uma transformação linear que projeta os dados em um novo espaço de menor dimensionalidade enquanto preserva a maior parte da variância.
+
+\textbf{Economia e finanças:} Nesta área as transformações lineares são aplicadas para descrever e analisar as relações entre variáveis econômicas, como oferta e demanda, investimentos e retornos financeiros. Elas são usadas em modelos de regressão linear, análise de séries temporais e precificação de ativos financeiros. 
+
+\textbf{Engenharia e física:} Na engenharia e física, as transformações lineares são fundamentais para descrever sistemas físicos e resolver problemas de engenharia. Elas são usadas em mecânica para representar sistemas de equações diferenciais lineares que descrevem o movimento de corpos sólidos e fluidos, em eletrônica para modelar circuitos elétricos lineares e em controle de sistemas para projetar controladores lineares.
+
+No exemplo abaixo foi selecionado a área de engenharia em análise de estruturas estáticas, no qual calcula a força em cada membro que compõe a estrutura, no caso das treliças que será o caso analise temos barras e juntas.
+ 
+Em análise de estruturas estáticas, uma aplicação comum de transformação linear é na resolução de sistemas de equações lineares para determinar as forças internas e externas em cada membro da estrutura.
+
+Por exemplo, considere uma treliça, que é uma estrutura composta por membros retos ligados por juntas. Para analisar as forças em cada membro da treliça sob diferentes condições de carga, pode-se usar transformações lineares para representar as forças em cada membro em termos de forças externas aplicadas e das reações nas juntas.
+ 
+Ao formular as equações de equilíbrio para a estrutura, elas podem ser representadas como um sistema de equações lineares. A aplicação de técnicas de álgebra linear, como métodos de matriz e transformações, permite resolver eficientemente esses sistemas e determinar as forças em cada membro da treliça. Essa análise é crucial para garantir que a estrutura seja segura e capaz de suportar as cargas esperadas.
+	Suponha que temos uma treliça simples com três membros e quatro nós, como mostrado abaixo:
+
+   1
+  / \
+ /   \
+2-----3
+
+Podemos atribuir forças desconhecidas em cada membro da treliça (F1, F2, F3) e forças de reação nas juntas (R1x, R1y, R3x, R3y). Podemos então escrever as equações de equilíbrio para cada nó:
+
+Para o nó 1:
+
+ΣFx = R1x - F1 = 0
+ΣFy = R1y = 0
+Para o nó 2:
+
+ΣFx = -F1 = 0
+ΣFy = -F2 = 0
+Para o nó 3:
+
+ΣFx = -R3x + F1 = 0
+ΣFy = R3y - F3 = 0
+
+Além disso, podemos ter equações de equilíbrio global, como a soma das forças horizontais e verticais igual a zero.
+
+Essas equações formam um sistema de equações lineares que pode ser representado na forma matricial Ax = b, onde A é a matriz de coeficientes, x é o vetor de incógnitas (neste caso, as forças em cada membro e as reações nas juntas) e b é o vetor de termos constantes (neste caso, zeros devido ao equilíbrio).
+
+	Ao resolver esse sistema linear, podemos determinar as forças em cada membro da treliça e as reações nas juntas, o que nos permite analisar a estabilidade e a integridade estrutural da treliça.
+
+
+
+
+
+
+ 
