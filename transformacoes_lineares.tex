@@ -131,17 +131,37 @@ Se $\mathbf{v)}_1$ e $\mathbf{v)}_2$ pertencem ao núcleo $\mathbf{N}(\mathbf{T}
 \centerline{$\mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = 0 + 0 = 0$}
 
 \noindent portanto, $\mathbf{v}_1 + \mathbf{v}_2 \in \mathbf{N}(\mathbf{T})$. 
-%falta exemplos de núcleo
+
+\noindent\textbf{Exemplo 14:} Dado $\mathbf{T}: \mathbb{R}^2 \longrightarrow \mathbb{R} \mid (x, y) \rightarrow x + y$, o núcleo, que iremos chamar, neste caso, $\ker\mathbf{T}$ é $\ker\mathbf{T} = \{(x, y) \in \mathbb{R}^2; x + y = 0\}$, onde a reta $y = -x$ é $\ker\mathbf{T}$ e $\ker\mathbf{T} = \{(x, -x); x \in \mathbb{R}\} = \{x(1, -1); x \in \mathbb{R}\} = [(1, -1)]$. A imagem da transformação, ou seja, $Im\mathbf{T} = \mathbb{R}$, todavia, um vetor $\mathbf{w} \in \mathbb{R}, \mathbf{w} = \mathbf{T}(\mathbf{w}, 0)$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.00]{t_nucleo2.png}
+	\caption{Retirado de \cite{boldrini1980}, pg. 152}
+\end{figure}
+
+Percebe-se que a imagem de uma transformação é $\mathbf{T}: \mathbf{V} \longrightarrow \mathbf{W}$ é um subespaço de $\mathbf{W}$, pois, se tomarmos dois vetores, $\mathbf{w}_1 + \mathbf{w}_2 \in Im\mathbf{T}$ e $\alpha\mathbf{w}_1 \in Im\mathbf{T}$. Existem vetores $\mathbf{v}$ e $\mathbf{u} \in \mathbf{V} \mid \mathbf{T}(\mathbf{v}) = \mathbf{w}_1 + \mathbf{w}_2$ e $\mathbf{T}(\mathbf{u}) = \alpha\mathbf{w}_1$.
+
+Se $\mathbf{w}_1, \mathbf{w}_2 \in Im\mathbf{T}$, existem vetores $\mathbf{v}_1, \mathbf{v}_2 \in \mathbf{V} \mid \mathbf{T}(\mathbf{v}_1) = \mathbf{w}_1$ e $\mathbf{T}(\mathbf{v}_2) = \mathbf{w}_2$. Tendo $\mathbf{v} = \mathbf{v}_1 + \mathbf{v}_2$ e $\mathbf{u} = \alpha\mathbf{v}_1$, logo:
+
+\centerline{$\mathbf{T}(\mathbf{v}) = \mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = \mathbf{w}_1 + \mathbf{w}_2$} 
+\noindent e $\mathbf{T}(\mathbf{u}) = \mathbf{T}(\alpha\mathbf{v}_1) = \alpha\mathbf{T}(\mathbf{v}_1) = \alpha\mathbf{w}_1$, portanto, $Im\mathbf{T}$ é um subespaço vetorial de $\mathbf{W}$.
 
 \section{Isomorfismo}
-Um conceito intrigante surge com o isomorfismo. Uma transformação linear $\mathbf{T}: \mathbf{U} \longleftrightarrow \mathbf{V}$, entre espaços vetoriais $\mathbf{U}$ e $\mathbf{V}$, é considerado um isomorfismo se atender a duas condições cruciais:
+Um conceito intrigante surge com o isomorfismo. Uma transformação linear $\mathbf{T}: \mathbf{U} \longleftrightarrow \mathbf{V}$, entre espaços vetoriais $\mathbf{U}$ e $\mathbf{V}$, que é bijetora. Um isomorfismo só é válido se atender a duas condições cruciais:
 
 \begin{enumerate}
 	\item \textbf{Injetividade:} $\mathbf{T}$ é injetora, o que significa que mapeia vetores distintos do domínio para vetores distintos no contradomínio. Em outras palavras, $\mathbf{T}$ preserva a identidade.
 	\item \textbf{Sobrejetividade:} $\mathbf{T}$ é sobrejetora, mapeando todo vetor em $\mathbf{V}$ a partir de um vetor em $\mathbf{U}$. Isso significa que a imagem de $\mathbf{T}$ abrange todo o espaço $\mathbf{V}$.
 \end{enumerate}
 
-Se $\mathbf{T}$ satisfaz ambas as condições, podemos afirmar que ela estabelece uma correspondência biunívoca entre $\mathbf{U}$ e $\mathbf{V}$. Essa relação especial permite que representamos cada vetor em $\mathbf{V}$  por um único vetor em $\mathbf{U}$, e vice-versa.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.00]{t_isomorfismo.png}
+	\caption{Retirado de \cite{anton2010elementary}, pg. 445}
+\end{figure}
+
+Se $\mathbf{T}$ satisfaz ambas as condições, podemos afirmar que ela estabelece uma correspondência biunívoca entre $\mathbf{U}$ e $\mathbf{V}$. Essa relação especial permite que representamos cada vetor em $\mathbf{V}$  por um único vetor em $\mathbf{U}$, e vice-versa. É notável também ressaltar, que, todo espaço vetorial $\mathbf{V}$ de dimensão $n$ é isomorfo a $\mathbb{R}^n$, portanto dois espaços vetoriais de dimensão finita são isomorfos se tiverem a mesma dimensão.
 
 O núcleo de uma transformação e seu isomorfismo tem uma conexão que é o Teorema do Núcleo e da Imagem. Este teorema estabelece uma relação crucial entre a dimensão do núcleo, a dimensão da imagem e a dimensão do domínio de uma transformação linear $\mathbf{T}$:
 
@@ -151,3 +171,32 @@ O núcleo de uma transformação e seu isomorfismo tem uma conexão que é o Teo
 
 O Teorema do Núcleo e da Imagem oferece ferramentas valiosas para determinar se uma transformação linear é um isomorfismo. Se a dimensão do núcleo for zero e a dimensão da imagem for igual à dimensão do domínio, podemos concluir que $\mathbf{T}$ é um isomorfismo.
 
+\noindent\textbf{Teorema:} Sejam $E, F$ espaços vetoriais de dimensão finita. Para toda transformação linear $\mathbf{T}: E \longrightarrow F$ tem-se que $\dim E = \dim \mathbf{N}(\mathbf{T}) + \dim Im(\mathbf{T})$.
+
+Se $\{\mathbf{T}(\mathbf{u}_1), \ldots, \mathbf{T}(\mathbf{u}_p)\}$ é uma base de $Im(\mathbf{T})$ e $\{\mathbf{v}_1, \ldots, \mathbf{v}_q\}$ é uma base de $\mathbf{N}(\mathbf{T})$ então $\{\mathbf{u}_1, \ldots, \mathbf{u}_p, \mathbf{v}_1, \ldots, \mathbf{v}_q\}$ é uma base de $E$. Logo, se tivemos
+
+\centerline{$\alpha_1\mathbf{u}_1 + \ldots + \alpha_p + \beta\mathbf{v}_1 + \ldots + \beta\mathbf{u}_q = 0$,}
+
+então, com a transformação em ambos os membros da igualdade, obtemos
+
+\centerline{$\alpha_1\mathbf{T}(\mathbf{u}_1) + \ldots + \alpha_p\mathbf{T}(\mathbf{u}_p) = 0$.}
+
+Como $\mathbf{T}(\mathbf{u}_1), \ldots, \mathbf{T}(\mathbf{u}_p)$ são \textbf{LI}, resultando em $\alpha_1 = \ldots = \alpha_p = 0$. Portanto se reduz a igualdade
+
+\centerline{$\beta_1\mathbf{v}_1 + \ldots + \beta_q\mathbf{v}_q = 0$.}
+
+Da mesma forma $\mathbf{v}_1, \ldots, \mathbf{v}_q$ são \textbf{LI}, concluí-se que $\beta_1 = \ldots = \beta_q = 0$. Então ambos os vetores $\mathbf{u}$ e $\mathbf{v}$ são \textbf{LI}.
+
+Agora, se considerarmos um vetor arbitrário $\mathbf{w} \in E$. Como $\mathbf{T}(\mathbf{w}) \in Im(\mathbf{T})$, definimos
+
+\centerline{$\mathbf{T}(\mathbf{w}) = \alpha_1\mathbf{T}(\mathbf{u}_1) + \ldots + \alpha_p\mathbf{T}(\mathbf{u}_p)$,}
+
+pois $\{\mathbf{T}(\mathbf{u}_1), \ldots, \mathbf{T}(\mathbf{u}_p)\}$ é uma base da imagem de $\mathbf{T}$. Manipulando a expressão temos
+
+\centerline{$\mathbf{T}[\mathbf{w} - (\alpha_1\mathbf{u}_1 + \ldots + \alpha_p\mathbf{u}_p)] = 0$.}
+
+Dessa forma, o vetor $\mathbf{w} - (\alpha_1\mathbf{u}_1 + \ldots + \alpha_p\mathbf{u}_p)$ pertence ao núcleo de $\mathbf{T}$, podendo ser expresso como uma combinação linear dos elementos da base $\{\mathbf{v}_1, \ldots, \mathbf{v}_q\}$. Temos então
+
+\centerline{$(\alpha_1\mathbf{u}_1 + \ldots + \alpha_p\mathbf{u}_p) = \beta_1\mathbf{v}_1 + \ldots + \beta_q\mathbf{v}_q$,}
+
+ou seja, $\mathbf{w} = \alpha_1\mathbf{u}_1 + \ldots + \alpha_p\mathbf{u}_p + \beta_1\mathbf{v}_1 + \ldots + \beta_q\mathbf{v}_q$. O que prova que os vetores $\{\mathbf{u}_1, \ldots, \mathbf{u}_p, \mathbf{v}_1, \ldots, \mathbf{v}_q\}$ geram $E$ e portanto constituem uma base.

@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>main</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<div class="capa">
+<p><span><strong></strong></span></p>
+<p><a href="teste.com.br"><strong>Link do vídeo</strong></a></p>
+</div>
+<div class="dedicatoria">
+<p><em>Este trabalho é dedicado às crianças adultas que,<br />
+quando pequenas, sonharam em se tornar cientistas.<br />
+</em></p>
+</div>
+<div class="agradecimentos">
+<p>A conclusão desta monografia representa um marco importante em nossas
+vidas acadêmica e profissional. Ao longo dessa jornada, tivemos a
+oportunidade de contar com o apoio e a colaboração de diversas pessoas e
+instituições, às quais expresso minha mais profunda gratidão.</p>
+<p>À minha família e amigos,</p>
+<p>minha base sólida e porto seguro em todos os momentos. Agradeço por
+acreditarem em nosso potencial, por incentivarem nossos sonhos e por
+celebrarem cada conquista ao nosso lado. A vocês, dedico este trabalho
+com imenso amor e reconhecimento.</p>
+<p>A minha orientadora, Professora ,</p>
+<p>reconheço a importância fundamental de sua orientação, sabedoria e
+paciência ao longo da pesquisa. Sua expertise e dedicação nos inspiraram
+e guiaram na construção deste trabalho. Agradeço pelas valiosas
+contribuições, pelo tempo dedicado e pela confiança depositada em nosso
+grupo.</p>
+<p>Aos demais membros da banca examinadora,</p>
+<p>Professores(as),</p>
+<p>agradeço a oportunidade de apresentar nossa pesquisa e receber seus
+valiosos feedbacks. Agradeço por terem dedicado seu tempo e conhecimento
+à avaliação deste trabalho.</p>
+<p>À ,</p>
+<p>minha segunda casa durante os anos de graduação. Agradeço à
+instituição por nos proporcionar uma formação de qualidade, por nos
+colocar em contato com professores excepcionais e por nos oferecer os
+recursos necessários para o desenvolvimento desta pesquisa de forma
+gratuita.</p>
+<p>Aos colegas de curso e amigos da Licenciatura em Matemática,</p>
+<p>com quem compartilhamos momentos de aprendizado, desafios e alegrias.
+Agradeço pelas trocas de conhecimento, pelo apoio mútuo e pela amizade
+que nos acompanham desde o início da graduação.</p>
+<p>Aos projetos integradores e demais serviços de pesquisa além da
+plataforma acadêmica,</p>
+<p>que nos proporcionaram acesso a materiais essenciais para a
+realização deste trabalho. Agradeço a todos os profissionais que me
+auxiliaram na busca por informações e na utilização de ferramentas para
+uma boa pesquisa.</p>
+<p>A todos que, direta ou indiretamente, contribuíram para a realização
+deste trabalho,</p>
+<p>nossa sincera gratidão. Cada palavra de incentivo, cada sugestão e
+cada ajuda foram valiosas para o nosso aprimoramento e para a conquista
+deste objetivo.</p>
+<p>Este trabalho é fruto de um esforço coletivo e representa a soma de
+conhecimentos, experiências e apoio de muitas pessoas. Agradecemos a
+todos que fizeram parte dessa jornada e que nos ajudaram a alcançar este
+importante marco em nossas vidas.</p>
+</div>
+<div class="epigrafe">
+<div class="flushright">
+<p><em>“Hoje, ainda almejamos saber por que<br />
+estamos aqui e de onde viemos.O desejo<br />
+profundo da humanidade pelo conhecimento é<br />
+justificativa suficiente para nossa busca contínua.<br />
+(Stephen Hawking)</em></p>
+</div>
+</div>
+<div class="resumo">
+<p>Só após ao fim da conclusão.</p>
+<p><strong>Palavras-chave: Transformação Linear, Álgebra Linear,
+Matrizes</strong></p>
+</div>
+<div class="resumo">
+<div class="otherlanguage*">
+<p><span>english</span> Same above.</p>
+<p><strong>Keywords</strong>: Linear Transformation, Linear Algebra.
+Matrices.</p>
+</div>
+</div>
+<div class="simbolos">
+<p>Conjunto dos números reais.</p>
+<p>Existe.</p>
+<p>Pertence.</p>
+<p>Tal que.</p>
+<p>Portanto.</p>
+<p>Conjunto vazio.</p>
+</div>
+<h1 id="introdução">Introdução</h1>
+<p>Com o decorrer do tempo, depois da era de ouro da álgebra linear nos
+meados do século XVIII. Onde, Euler e Louis Lagrange publicaram o
+"Recherche d’Arithmétique", entre 1773 e 1775, no qual estudavam certos
+conceitos da transformação linear. Posteriormente, Johann Carl Friedrich
+Gauss, também estudou sobre assuntos que apresentou similaridade com a
+matriz de transformação linear.</p>
+<p>Até se arrefecer o assunto no século XIX e XX, com Giuseppe Peano,
+onde foi cunhado o termo "sistema linear" com a primeira definição de
+axiomática para espaço vetorial. Nos dias atuais, a apresentação da
+álgebra linear, temas abordados nesse campo da matemática são
+frequentemente esquecidos, portanto, este estudo trata de buscar o
+entendimento e compreender sobre as transformações lineares em sua
+totalidade e aplicações no contexto atual contemporâneo.</p>
+<p>Passado esse brevíssimo contexto histórico e motivador para a nossa
+pesquisa e deleite deste ramo de estudado, iremos nos adiantar a certos
+conceitos matemáticos elementares já bastantes fundamentados no decorrer
+dos anos escolares do ensino básico regular. Para isto, passaremos a
+certas definições matemáticas primordiais que serão apresentadas nesta
+monografia para as discussões advindas a posteriori neste estudo.</p>
+<p>Portanto, dividimos esta monografia em 4 capítulos, a saber, revisão
+literária fundamentais, pesquisas de artigos, teses e discussões
+recentes sobre as transformações lineares em diversas aplicações, seu
+contexto educacional atual em questão de matéria aplicada e por
+conseguinte nossa metodologia utilizada, os resultados obtidos dessa
+pesquisa e, por fim, nossa discussão final, a saber, do uso da
+transformação linear atualmente.</p>
+<p>Aguardando Iara nesta parte...</p>
+<h1 id="espaços-vetoriais">Espaços Vetoriais</h1>
+<p>Começaremos pela definição de um espaço vetorial, onde, podemos
+tratar como um vetor ao designar um elemento do espaço vetorial de um
+número <span class="math inline">ℝ</span> definido tal que:</p>
+<p><strong>Definição 01:</strong> Seja um conjunto V, não vazio, com
+duas operações: soma, <span
+class="math inline"><em>V</em> × <em>V</em> → <em>V</em></span>, e
+multiplicação por escalar, <span
+class="math inline"><em>R</em> × <em>V</em> → <em>V</em></span>, tais
+que, para quaisquer <span
+class="math inline"><em>u</em>, <em>v</em>, <em>w</em> ∈ ℝ</span>,
+satisfaçam as propriedades:</p>
+<ol>
+<li><p><span
+class="math inline">(<em>u</em> + <em>v</em>) + <em>w</em> = <em>u</em> + (<em>v</em> + <em>w</em>), ∀</span>
+<span
+class="math inline"><em>u</em>, <em>v</em>, <em>w</em> ∈ <em>V</em></span>
+(propriedade associativa.)</p></li>
+<li><p><span
+class="math inline">1<em>u</em> = <em>u</em></span>.</p></li>
+<li><p><span
+class="math inline"><em>u</em> + <em>v</em> = <em>v</em> + <em>u</em>, ∀</span>
+<span class="math inline"><em>u</em>, <em>v</em> ∈ <em>V</em></span>
+(propriedade comutativa).</p></li>
+<li><p><span class="math inline">∃</span> <span
+class="math inline">0</span> <span
+class="math inline"> ∈ <em>V</em></span> tal que <span
+class="math inline"><em>u</em> + 0 = <em>u</em></span>.</p></li>
+<li><p><span class="math inline">∃</span> <span
+class="math inline">−<em>u</em> ∈ <em>V</em></span> tal que <span
+class="math inline"><em>u</em> + (−<em>u</em>) = 0</span>.</p></li>
+<li><p><span
+class="math inline"><em>a</em>(<em>u</em> + <em>v</em>) = <em>a</em><em>u</em> + <em>a</em><em>v</em></span>.</p></li>
+<li><p><span
+class="math inline">(<em>a</em> + <em>b</em>)<em>v</em> = <em>a</em><em>v</em> + <em>b</em><em>v</em></span>.</p></li>
+<li><p><span
+class="math inline">(<em>a</em><em>b</em>)<em>v</em> = <em>a</em>(<em>b</em><em>v</em>)</span>.</p></li>
+<li><p><span
+class="math inline">1<em>u</em> = <em>u</em></span>.</p></li>
+</ol>
+<p><strong>Observação:</strong> <span
+class="math inline"><strong>0</strong></span> é o vetor nulo.</p>
+<p><strong>Observação:</strong> Limitaremos nossa discussão,
+demonstrações e aplicações dentro do conjunto dos números reais
+apenas.</p>
+<p><strong>Exemplo 01:</strong> Suponhamos uma matriz <span
+class="math inline"><em>M</em><sub>(2, 2)</sub></span>, onde, é denotado
+por <span
+class="math inline"><em>M</em><sub>(<em>m</em>, <em>n</em>)</sub></span>,
+dado por <span
+class="math inline"><em>M</em> = [<em>a</em><sub><em>i</em><em>j</em></sub>]<sub><em>m</em> × <em>n</em></sub></span>
+podendo ser interpretada dessa forma, <span
+class="math inline"><em>V</em> = <em>M</em><sub>(2, 2)</sub></span>,
+onde <span class="math inline"><em>V</em></span>, é um conjunto não
+vazio, seu escalar pertencente ao conjunto dos <span
+class="math inline">ℝ</span>, que satisfazem todas as propriedades de um
+espaço vetorial.</p>
+<figure>
+<img src="exemplo01.png" />
+<figcaption>Exemplo 01: Vetor no plano.</figcaption>
+</figure>
+<p>A partir disto, podemos perceber o uso analítico dos espaços
+vetoriais para resolução de problemas em geral. Vejamos mais alguns
+exemplos.</p>
+<p><strong>Exemplo 02:</strong> O exemplo anterior, trata-se de uma
+matriz de <span class="math inline">ℝ<sup>2</sup></span> pode ser dito
+como, no plano, agora iremos expandir para <span
+class="math inline">ℝ<sup>3</sup></span>, seja um vetor <span
+class="math inline"><em>A</em> = (<em>x</em>, <em>y</em>, <em>z</em>)</span>
+ou representado pela forma matricial:</p>
+<p><span class="math display">$$A = \begin{bmatrix}
+	a \\ b \\ c
+\end{bmatrix}$$</span> Assim, por quaisquer números reais, podemos fazer
+uma projeção ortogonal no espaço, segue um exemplo traçado:</p>
+<figure>
+<img src="exemplo02.png" />
+<figcaption>Exemplo 02: Exemplo de vetor no espaço.</figcaption>
+</figure>
+<p><strong>Exemplo 03:</strong> Consideremos <span
+class="math inline"><em>n</em> − <em>u</em><em>p</em><em>l</em><em>a</em><em>s</em></span>
+de números reais.</p>
+<p><span
+class="math inline"><em>V</em> = ℝ<sup><em>n</em></sup> = {(<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, <em>x</em><sub><em>n</em></sub>); <em>x</em><sub><em>i</em></sub> ∈ ℝ}</span></p>
+<p>e se <span
+class="math inline"><em>u</em> = (<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, <em>x</em><sub><em>n</em></sub>), <em>v</em> = (<em>y</em><sub>1</sub>, <em>y</em><sub>2</sub>, …, <em>y</em><sub><em>n</em></sub>)</span>
+e <span class="math inline"><em>a</em> ∈ ℝ</span>,</p>
+<p><span
+class="math inline"><em>u</em> + <em>v</em> = (<em>x</em><sub>1</sub> + <em>y</em><sub>1</sub>, <em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>, …, <em>x</em><sub><em>n</em></sub>, <em>y</em><sub><em>n</em></sub>)</span>
+e <span
+class="math inline"><em>a</em><em>u</em> = (<em>a</em><em>x</em><sub>1</sub>, <em>a</em><em>x</em><sub>2</sub>, …, <em>a</em><em>x</em><sub><em>n</em></sub>)</span></p>
+<p>Por tratarmos de uma quantidade <span
+class="math inline"><em>n</em></span> de números, o campo tridimensional
+deixa de ser visto, e passamos a ter <span
+class="math inline">ℝ<sup><em>n</em></sup></span> dimensões, as
+propriedades não deixam de valer independente a quantidade de
+dimensões.</p>
+<h2 id="subespaços-vetoriais">Subespaços Vetoriais</h2>
+<p>Nesta seção iremos introduzir conceitos no estudo de espaço vetorial
+para subespaço vetorial.</p>
+<p><strong>Definição 02:</strong> Dado um espaço vetorial V, um
+subconjunto W, não vazio, será um subespaço vetorial de V se:</p>
+<ol>
+<li><p>Para quaisquer <span
+class="math inline"><em>u</em>, <em>v</em> ∈ <em>W</em></span> tivermos
+<span
+class="math inline"><em>u</em> + <em>v</em> ∈ <em>W</em></span>.</p></li>
+<li><p>Para quaisquer <span
+class="math inline"><em>a</em> ∈ <em>R</em>, <em>u</em> ∈ <em>W</em></span>
+tivermos <span
+class="math inline"><em>a</em><em>u</em> ∈ <em>W</em></span>.</p></li>
+</ol>
+<p><strong>Teorema 01:</strong> Um subconjunto não vazio <span
+class="math inline"><em>W</em></span> de <span
+class="math inline"><em>V</em></span> é um subespaço de <span
+class="math inline"><em>V</em></span> se, e somente se, para cada par de
+vetores <span class="math inline"><em>α</em>, <em>β</em></span> em <span
+class="math inline"><em>W</em></span> e cada escalar <span
+class="math inline"><em>c</em></span> em <span
+class="math inline"><em>F</em></span>, o vetor <span
+class="math inline"><em>c</em><em>α</em> + <em>β</em></span> está em
+<span class="math inline"><em>W</em></span>.</p>
+<p><strong>Demonstração:</strong> Suponhamos que <span
+class="math inline"><em>W</em></span> seja um subconjunto não vazio de
+<span class="math inline"><em>V</em></span>, tal que, <span
+class="math inline"><em>c</em><em>α</em> + <em>β</em></span> pertença a
+<span class="math inline"><em>W</em></span> para todos os vetores <span
+class="math inline"><em>α</em></span>, <span
+class="math inline"><em>β</em></span> em <span
+class="math inline"><em>W</em></span> e todos escalares <span
+class="math inline"><em>c</em></span> em <span
+class="math inline"><em>F</em></span>. Como <span
+class="math inline"><em>W</em></span> é não vazio, existe um vetor <span
+class="math inline"><em>ρ</em></span> em <span
+class="math inline"><em>W</em></span>, logo <span
+class="math inline">(−1)<em>ρ</em> + <em>ρ</em> = 0</span> está em <span
+class="math inline"><em>W</em></span>. Então se <span
+class="math inline"><em>α</em></span> é um vetor arbitrário em <span
+class="math inline"><em>W</em></span> e <span
+class="math inline"><em>c</em></span> é um escalar arbitrário, o vetor
+<span
+class="math inline"><em>c</em><em>α</em> = <em>c</em><em>α</em> + 0</span>
+está em <span class="math inline"><em>W</em></span>. Em particular <span
+class="math inline">(−<em>l</em>)<em>α</em> = −<em>α</em></span> está em
+<span class="math inline"><em>W</em></span>. Finalmente se <span
+class="math inline"><em>α</em></span> e <span
+class="math inline"><em>β</em></span> estão em <span
+class="math inline"><em>W</em></span>, então <span
+class="math inline"><em>α</em> + <em>β</em> = 1<em>α</em> + <em>β</em></span>
+está em <span class="math inline"><em>W</em></span>. Assim, <span
+class="math inline"><em>W</em></span> é um subespaço de <span
+class="math inline"><em>V</em></span>.</p>
+<p><strong>Exemplo 04:</strong> Considere o espaço vetorial <span
+class="math inline">ℝ<sup>3</sup></span>. O conjunto de todos os vetores
+que residem no plano <span
+class="math inline"><em>x</em><em>y</em></span>, ou seja, <span
+class="math inline">{(<em>x</em>, <em>y</em>, 0) ∣ <em>x</em>, <em>y</em> ∈ ℝ}</span>,
+forma um subespaço vetorial de <span
+class="math inline">ℝ<sup>3</sup></span>.</p>
+<p>Se o conjunto dado forma um subespaço vetorial de <span
+class="math inline">ℝ<sup>3</sup></span>, precisamos verificar as três
+propriedades fundamentais:</p>
+<ol>
+<li><p>Contém o vetor nulo: O vetor nulo em <span
+class="math inline">ℝ<sup>3</sup></span> é <span
+class="math inline">(0, 0, 0)</span>. Este vetor também está contido no
+plano <span class="math inline"><em>x</em><em>y</em></span>, pois <span
+class="math inline"><em>z</em> = 0</span>.</p></li>
+<li><p>É fechado sob adição: Se tomarmos dois vetores <span
+class="math inline">(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>, 0)</span>
+e <span
+class="math inline">(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>, 0)</span>
+no plano <span class="math inline"><em>x</em><em>y</em></span>, a sua
+soma será <span
+class="math inline">(<em>x</em><sub>1</sub> + <em>x</em><sub>2</sub>, <em>y</em><sub>1</sub> + <em>y</em><sub>2</sub>, 0)</span>,
+que também reside no plano <span
+class="math inline"><em>x</em><em>y</em></span>.</p></li>
+<li><p>É fechado sob multiplicação por escalar: Para qualquer escalar
+<span class="math inline"><em>c</em></span> e vetor <span
+class="math inline">(<em>x</em>, <em>y</em>, 0)</span> no plano <span
+class="math inline"><em>x</em><em>y</em></span>, <span
+class="math inline"><em>c</em> ⋅ (<em>x</em>, <em>y</em>, 0) = (<em>c</em><em>x</em>, <em>c</em><em>y</em>, 0)</span>,
+que também está no plano <span
+class="math inline"><em>x</em><em>y</em></span>.</p></li>
+</ol>
+<p>Então, o conjunto de todos os vetores <span
+class="math inline">(<em>x</em>, <em>y</em>, 0)</span> com <span
+class="math inline"><em>x</em>, <em>y</em> ∈ ℝ</span> forma um subespaço
+vetorial de <span class="math inline">ℝ<sup>3</sup></span>.</p>
+<p><strong>Exemplo 05:</strong> No espaço vetorial das funções reais de
+uma variável real, <span
+class="math inline"><em>V</em> = {<em>f</em>(<em>x</em>) ∣ <em>f</em> : ℝ → ℝ}</span>,
+considere o conjunto de todas as funções lineares, ou seja, <span
+class="math inline">{<em>f</em>(<em>x</em>) = <em>m</em><em>x</em> + <em>b</em> ∣ <em>m</em>, <em>b</em> ∈ ℝ}</span>.
+Esse conjunto forma um subespaço vetorial de <span
+class="math inline"><em>V</em></span>. Novamente, você pode verificar as
+propriedades para confirmar.</p>
+<p>Se o conjunto dado forma um subespaço vetorial de <span
+class="math inline"><em>V</em></span>, novamente precisamos verificar as
+três propriedades fundamentais:</p>
+<ol>
+<li><p>Contém a função nula: A função nula em <span
+class="math inline"><em>V</em></span> é <span
+class="math inline"><em>f</em>(<em>x</em>) = 0</span>. Esta função é uma
+função linear, pois pode ser escrita como <span
+class="math inline"><em>f</em>(<em>x</em>) = 0 ⋅ <em>x</em> + 0</span>.
+Portanto, a função nula está contida no conjunto.</p></li>
+<li><p>É fechado sob adição: Se tomarmos duas funções lineares <span
+class="math inline"><em>f</em><sub>1</sub>(<em>x</em>) = <em>m</em><sub>1</sub><em>x</em> + <em>b</em><sub>1</sub></span>
+e <span
+class="math inline"><em>f</em><sub>2</sub>(<em>x</em>) = <em>m</em><sub>2</sub><em>x</em> + <em>b</em><sub>2</sub></span>,
+a sua soma será <span
+class="math inline"><em>f</em><sub>1</sub>(<em>x</em>) + <em>f</em><sub>2</sub>(<em>x</em>) = (<em>m</em><sub>1</sub> + <em>m</em><sub>2</sub>)<em>x</em> + (<em>b</em><sub>1</sub> + <em>b</em><sub>2</sub>)</span>,
+que também é uma função linear. Portanto, o conjunto é fechado sob
+adição.</p></li>
+<li><p>É fechado sob multiplicação por escalar: Para qualquer escalar
+<span class="math inline"><em>c</em></span> e função linear <span
+class="math inline"><em>f</em>(<em>x</em>) = <em>m</em><em>x</em> + <em>b</em></span>,
+a multiplicação por escalar <span
+class="math inline"><em>c</em><em>f</em>(<em>x</em>) = <em>c</em>(<em>m</em><em>x</em> + <em>b</em>) = (<em>c</em><em>m</em>)<em>x</em> + (<em>c</em><em>b</em>)</span>
+também é uma função linear. Assim, o conjunto é fechado sob
+multiplicação por escalar.</p></li>
+</ol>
+<p>Portanto, o conjunto de todas as funções lineares <span
+class="math inline"><em>f</em>(<em>x</em>) = <em>m</em><em>x</em> + <em>b</em></span>
+com <span class="math inline"><em>m</em>, <em>b</em> ∈ ℝ</span> forma um
+subespaço vetorial de <span class="math inline"><em>V</em></span>.</p>
+<p><strong>Exemplo 06:</strong> No espaço das matrizes reais <span
+class="math inline">2 × 2</span>, <span
+class="math inline"><em>M</em><sub>(2, 2)</sub></span>, considere o
+conjunto de todas as matrizes simétricas, ou seja, aquelas em que <span
+class="math inline"><em>A</em> = <em>A</em><sup><em>T</em></sup></span>.
+Esse conjunto forma um subespaço vetorial de <span
+class="math inline"><em>M</em><sub>(2, 2)</sub></span>. Você pode
+demonstrar isso verificando as propriedades de um subespaço vetorial</p>
+<p>Para tal, é imperativo investigar as três propriedades basilares:</p>
+<ol>
+<li><p><strong>Presença da Matriz Nula:</strong> A matriz nula em <span
+class="math inline"><em>M</em><sub>(2, 2)</sub></span> é a matriz <span
+class="math inline">$\begin{pmatrix} 0 &amp; 0 \\ 0 &amp; 0
+\end{pmatrix}$</span>. Nota-se que esta matriz é simétrica, posto que
+<span
+class="math inline"><em>A</em> = <em>A</em><sup><em>T</em></sup></span>.
+Portanto, a matriz nula está asseguradamente contida no conjunto em
+questão.</p></li>
+<li><p><strong>Fechamento sob Adição:</strong> Considerando duas
+matrizes simétricas <span class="math inline"><em>A</em></span> e <span
+class="math inline"><em>B</em></span>, a sua soma <span
+class="math inline"><em>A</em> + <em>B</em></span> é também simétrica,
+visto que <span
+class="math inline">(<em>A</em> + <em>B</em>)<sup><em>T</em></sup> = <em>A</em><sup><em>T</em></sup> + <em>B</em><sup><em>T</em></sup> = <em>A</em> + <em>B</em></span>.
+Logo, o conjunto demonstra ser fechado sob adição.</p></li>
+<li><p><strong>Fechamento sob Multiplicação por Escalar:</strong> Para
+qualquer escalar <span class="math inline"><em>c</em></span> e matriz
+simétrica <span class="math inline"><em>A</em></span>, a multiplicação
+por escalar <span class="math inline"><em>c</em><em>A</em></span> é
+igualmente simétrica, haja vista que <span
+class="math inline">(<em>c</em><em>A</em>)<sup><em>T</em></sup> = <em>c</em><em>A</em><sup><em>T</em></sup> = <em>c</em><em>A</em></span>.
+Deste modo, o conjunto revela-se fechado sob multiplicação por
+escalar.</p></li>
+</ol>
+<p>Assim sendo, constata-se que o conjunto de todas as matrizes
+simétricas configura-se como um subespaço vetorial de <span
+class="math inline"><em>M</em><sub>(2, 2)</sub></span>.</p>
+<h2 id="combinação-linear">Combinação Linear</h2>
+<p>Dentro de um espaço vetorial, conforme demonstrado que podemos ter
+subconjuntos de espaços vetoriais, é possível a obtenção de novos
+vetores a partir de vetores dados <span class="citation"
+data-cites="boldrini1980"></span>.</p>
+<p><strong>Definição 03:</strong> Sejam <span
+class="math inline"><em>V</em></span> um espaço vetorial <span
+class="math inline">ℝ</span>, <span
+class="math inline"><em>v</em><sub>1</sub>, <em>v</em><sub>2</sub>, …, <em>v</em><sub><em>n</em></sub> ∈ <em>V</em></span>
+e <span
+class="math inline"><em>a</em><sub>1</sub>, …, <em>a</em><sub><em>n</em></sub> ∈ ℝ</span>.
+Então, o vetor <span
+class="math inline"><em>v</em> = <em>a</em><sub>1</sub><em>v</em><sub>1</sub> + <em>a</em><sub>2</sub><em>v</em><sub>2</sub> + … + <em>a</em><sub><em>n</em></sub><em>v</em><sub><em>n</em></sub></span>
+é um elemento de <span class="math inline"><em>V</em></span> podendo ser
+chamado combinação linear de <span
+class="math inline"><em>v</em><sub>1</sub>, …, <em>v</em><sub><em>n</em></sub></span>.</p>
+<p>Se <span class="math inline"><em>V</em> ⊂ <em>W</em></span>, podemos
+adotar a notação <span
+class="math inline"><em>W</em> = [<em>v</em><sub>1</sub>, …, <em>v</em><sub><em>n</em></sub>]</span>,
+onde expandindo-o</p>
+<p><span
+class="math inline"><em>W</em> = [<em>v</em><sub>1</sub>, …, <em>v</em><sub><em>n</em></sub>] = {<em>v</em> ∈ <em>V</em>; <em>v</em> = <em>a</em><sub>1</sub><em>v</em><sub>1</sub> + … + <em>a</em><sub><em>n</em></sub><em>v</em><sub><em>n</em></sub>, <em>a</em><sub><em>i</em></sub> ∈ ℝ, 1 ≤ <em>i</em> ≤ <em>n</em>}</span></p>
+<p><strong>Exemplo 07:</strong> Presuma um vetor <span
+class="math inline"><em>V</em> = ℝ<sup>3</sup>, <em>v</em> ∈ <em>V</em>, <em>v</em> ≠ 0</span>.
+Se imaginarmos sua reta que contém o vetor <span
+class="math inline"><em>v</em></span>, onde, <span
+class="math inline">[<em>v</em>] = <em>a</em><em>v</em> : <em>a</em> ∈ ℝ</span></p>
+<figure>
+<img src="cb_exemplo7.png" />
+<figcaption>Retirado de <span class="citation"
+data-cites="boldrini1980"></span>, pg. 113.</figcaption>
+</figure>
+<p><strong>Exemplo 08:</strong> Se obtemos <span
+class="math inline"><em>v</em><sub>1</sub>, <em>v</em><sub>2</sub> ∈ ℝ<sup>3</sup></span>
+e <span
+class="math inline"><em>v</em><sub>3</sub> ∈ [<em>v</em><sub>1</sub>, <em>v</em><sub>2</sub>]</span>,
+então <span
+class="math inline">[<em>v</em><sub>1</sub>, <em>v</em><sub>2</sub>, <em>v</em><sub>3</sub>] = [<em>v</em><sub>1</sub>, <em>v</em><sub>2</sub>]</span>,
+então <span class="math inline"><em>v</em><sub>3</sub></span> é um
+combinação linear de <span
+class="math inline"><em>v</em><sub>1</sub></span> e <span
+class="math inline"><em>v</em><sub>2</sub></span>.</p>
+<figure>
+<img src="cb_exemplo8.png" />
+<figcaption>Retirado de <span class="citation"
+data-cites="boldrini1980"></span>, pg. 113.</figcaption>
+</figure>
+<p><strong>Exemplo 09:</strong> Consideremos o espaço vetorial <span
+class="math inline">ℝ<sup>3</sup></span> e os vetores <span
+class="math inline">$\mathbf{v} = \begin{pmatrix} 2 \\ 3 \\ 1
+\end{pmatrix}$</span> e <span class="math inline">$\mathbf{w} =
+\begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}$</span>. Sejam também os
+escalares <span class="math inline"><em>a</em> = 3</span> e <span
+class="math inline"><em>b</em> = −1</span>. Então temos, os seguintes
+elementos.</p>
+<table>
+<caption>Vetores e escalares utilizados na combinação linear</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Vetor</strong></th>
+<th style="text-align: center;"><strong>Componentes</strong></th>
+<th style="text-align: center;"><strong>Escalar</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline"><strong>v</strong></span></td>
+<td style="text-align: center;"><span
+class="math inline">2, 3, 1</span></td>
+<td style="text-align: center;"><span class="math inline">3</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span
+class="math inline"><strong>w</strong></span></td>
+<td style="text-align: center;"><span
+class="math inline">1, −1, 2</span></td>
+<td style="text-align: center;"><span class="math inline">−1</span></td>
+</tr>
+</tbody>
+</table>
+<p>Definimos a combinação linear dos vetores <span
+class="math inline"><strong>v</strong></span> e <span
+class="math inline"><strong>w</strong></span> como:</p>
+<p><span class="math display">$$a\mathbf{v} + b\mathbf{w} = 3
+\begin{pmatrix} 2 \\ 3 \\ 1 \end{pmatrix} + (-1) \begin{pmatrix} 1 \\ -1
+\\ 2 \end{pmatrix}.$$</span></p>
+<p>Aplicando as operações, obtemos:</p>
+<p><span class="math display">$$a\mathbf{v} + b\mathbf{w} =
+\begin{pmatrix} 6 \\ 9 \\ 3 \end{pmatrix} + \begin{pmatrix} -1 \\ 1 \\
+-2 \end{pmatrix} = \begin{pmatrix} 6 - 1 \\ 9 + 1 \\ 3 - 2 \end{pmatrix}
+= \begin{pmatrix} 5 \\ 10 \\ 1 \end{pmatrix}.$$</span></p>
+<p>Portanto, a combinação linear dos vetores <span
+class="math inline"><strong>v</strong></span> e <span
+class="math inline"><strong>w</strong></span> com os coeficientes <span
+class="math inline"><em>a</em> = 3</span> e <span
+class="math inline"><em>b</em> = −1</span> é o vetor</p>
+<p><span class="math inline">$\begin{pmatrix} 5 \\ 10 \\ 1
+\end{pmatrix}$</span></p>
+<h2 id="dependência-e-independência-linear">Dependência e Independência
+Linear</h2>
+<p>Dado a combinação linear, devemos saber, a priori, se algum desses
+vetores não é combinação linear dos outros e assim por diante. Para isto
+precisamos saber sua dependência e independência linear.</p>
+<p><strong>Definição 03:</strong> Sejam <span
+class="math inline"><strong>V</strong></span> um espaço vetorial e <span
+class="math inline"><strong>v</strong><sub>1</sub>, …, <strong>v</strong><sub><em>n</em></sub> ∈ <strong>V</strong></span>.
+Dizemos que o conjunto <span
+class="math inline"><strong>v</strong><sub>1</sub>, …, <strong>v</strong><sub><em>n</em></sub></span>
+é linearmente independente (<strong>LI</strong>), ou que os vetores
+<span
+class="math inline"><strong>v</strong><sub>1</sub>, …, <strong>v</strong><sub><em>n</em></sub></span>
+são <strong>LI</strong>, se a equação</p>
+<p><span
+class="math inline"><em>a</em><sub>1</sub><strong>v</strong><sub>1</sub> + … + <em>a</em><sub><em>n</em></sub><strong>v</strong><sub><em>n</em></sub> = 0</span></p>
+<p>implica que <span
+class="math inline"><em>a</em><sub>1</sub> = <em>a</em><sub>2</sub> = … = <em>a</em><sub><em>n</em></sub> = 0</span>.
+No caso em que exista algum <span
+class="math inline"><em>a</em><sub><em>i</em></sub> ≠ 0</span> dizemos
+que <span
+class="math inline"><em>v</em><sub>1</sub>, …, <em>v</em><sub><em>n</em></sub></span>
+é linearmente dependente (<strong>LD</strong>), ou que os vetores <span
+class="math inline"><strong>v</strong><sub>1</sub>, …, <strong>v</strong><sub><em>n</em></sub></span>
+são <strong>LD</strong>.</p>
+<p><strong>Teorema 02:</strong> Uma combinação linear é
+<strong>LD</strong> se, e somente se um destes vetores for uma
+combinação linear dos outros.</p>
+<p><span
+class="math inline">{<strong>v</strong><sub>1</sub>, …, <strong>v</strong><sub><em>n</em></sub>}=</span>
+<strong>LD</strong> <span
+class="math inline"> ⇔ ∃<em>i</em> ∣ ∑<sub><em>i</em> ≠ <em>j</em></sub><em>c</em><sub><em>i</em></sub><strong>v</strong><sub><em>i</em></sub></span></p>
+<p><strong>Demonstração:</strong> Sejam <span
+class="math inline"><strong>v</strong><sub>1</sub>, …, <strong>v</strong><sub><em>n</em></sub></span>
+<strong>LD</strong> e <span
+class="math inline"><em>a</em><sub>1</sub><strong>v</strong><sub>1</sub> + … + <em>a</em><sub><em>j</em></sub><strong>v</strong><sub><em>j</em></sub> + … + <em>a</em><sub><em>n</em></sub><strong>v</strong><sub><em>n</em></sub> = 0</span></p>
+<p>Um dos coeficientes deve ser diferente de zero. Suponhamos que seja
+<span class="math inline"><em>a</em><sub><em>j</em></sub> ≠ 0</span>.
+Então</p>
+<p><span class="math inline">$\mathbf{v}_j =
+-\frac{1}{a_j}(a_1\mathbf{v}_1 + \ldots + a_{j - 1}\mathbf{v}_{j - 1} +
++ a_{j + 1}\mathbf{v}_{j + 1} + \ldots + a_n\mathbf{v)_n}$</span></p>
+<p>e portanto <span class="math inline">$\mathbf{v}_j =
+-\frac{a_1}{a_j}\mathbf{v}_1 + \ldots
+-\frac{a_n}{a_j}\mathbf{v}_n$</span></p>
+<p>Logo, <span
+class="math inline"><strong>v</strong><sub><em>j</em></sub></span> é uma
+combinação linear dos outros vetores.</p>
+<p><strong>Exemplo 10:</strong> Sejam <span
+class="math inline"><strong>V</strong> = ℝ<sup>3</sup></span> e <span
+class="math inline"><em>v</em><sub>1</sub>, <em>v</em><sub>2</sub> ∈ <strong>V</strong></span>,
+<span
+class="math inline">{<strong>v</strong><sub>1</sub>, <strong>v</strong><sub>2</sub>}</span>
+é <strong>LD</strong> <span
+class="math inline"> ⇔ <strong>v</strong><sub>1</sub></span> e <span
+class="math inline"><strong>v</strong><sub>2</sub></span> estiverem na
+mesma reta, que passa pela origem. <span
+class="math inline">(<strong>v</strong><sub>1</sub> = <em>λ</em><strong>v</strong><sub>2</sub>)</span>.</p>
+<figure>
+<img src="cb_exemplo10.png" />
+<figcaption>Retirado de <span class="citation"
+data-cites="boldrini1980"></span>, pg. 115.</figcaption>
+</figure>
+<h1 id="transformações-lineares">Transformações Lineares</h1>
+<p>Neste capítulo, iremos tratar sobre um tipo especial de função ou
+aplicação, onde, segundo <span class="citation"
+data-cites="steinbruch1987"></span>, o domínio e o contradomínio são
+espaços vetoriais reais. Assim, tanto a variável independente como a
+variável dependente são vetores, razão pela qual essas funções são
+chamadas vetoriais.</p>
+<p>Nosso estudo das funções vetoriais lineares em questão, será focado,
+nas transformações lineares.</p>
+<p><strong>Definição 04:</strong> Sejam <span
+class="math inline"><strong>V</strong></span> e <span
+class="math inline"><strong>W</strong></span> dois espaços vetoriais.
+Uma transformação linear (aplicação linear) é uma função de <span
+class="math inline"><strong>V</strong></span> em <span
+class="math inline"><strong>W</strong></span>, <span
+class="math inline"><strong>F</strong> : <strong>V</strong> → <strong>W</strong></span>,
+que satisfaz as seguintes condições:</p>
+<ol>
+<li><p>Para quaisquer <span
+class="math inline"><strong>u</strong></span> e <span
+class="math inline"><strong>v</strong></span> em <span
+class="math inline"><strong>V</strong></span>, <span
+class="math inline"><strong>F</strong>(<strong>u</strong> + <strong>v</strong>) = <strong>F</strong>(<em>u</em>) + <strong>F</strong>(<em>v</em>)</span>.
+<strong>Homogeneidade</strong></p></li>
+<li><p>Para quaisquer <span class="math inline"><em>k</em> ∈ ℝ</span> e
+<span
+class="math inline"><strong>v</strong> ∈ <strong>V</strong></span>,
+<span
+class="math inline"><em>F</em>(<em>k</em><strong>v</strong>) = <em>k</em><strong>F</strong>(<strong>v</strong>)</span>.
+<strong>Aditividade</strong></p></li>
+</ol>
+<p>No caso especial em que <span
+class="math inline"><strong>V</strong> = <strong>W</strong></span>, a
+transformação linear é denominada <strong>operador linear</strong> do
+espaço vetorial <span class="math inline"><strong>V</strong></span>
+<span class="citation" data-cites="anton2010elementary"></span>.</p>
+<p>Válido em: <span
+class="math inline">∀<strong>v</strong>, <strong>v</strong> ∈ <strong>V</strong></span>
+e <span class="math inline">∀<em>k</em> ∈ ℝ</span>.</p>
+<p>Trataremos <span class="math inline"><strong>F</strong></span> como
+<span class="math inline"><strong>T</strong></span> por convenção daqui
+em diante. Para se dizer que <span
+class="math inline"><strong>T</strong></span> é uma transformação linear
+do espaço vetorial <span class="math inline"><strong>V</strong></span>
+no espaço vetorial <span class="math inline"><strong>W</strong></span>,
+será denotado por <span
+class="math inline"><strong>T</strong> : <strong>V</strong> → <strong>W</strong></span>,
+onde <span class="math inline"><strong>T</strong></span> é a função,
+cada vetor <span
+class="math inline"><strong>v</strong> ∈ <strong>V</strong></span> tem
+uma só imagem <span
+class="math inline"><strong>w</strong> ∈ <strong>W</strong></span>,
+indicado por <span
+class="math inline"><strong>w</strong> = <strong>T</strong>(<strong>v</strong>)</span>.</p>
+<p>Tomemos por dois conjuntos de vetores, <span
+class="math inline"><strong>V</strong> = ℝ<sup>2</sup></span> e <span
+class="math inline"><strong>W</strong> = ℝ<sup>3</sup></span>.</p>
+<p>Uma transformação de <span
+class="math inline"><strong>T</strong> : ℝ<sup>2</sup>→ ℝ<sup>3</sup></span>
+associa vetores <span
+class="math inline"><strong>v</strong> = (<em>x</em>, <em>y</em>) ∈ ℝ<sup>2</sup></span>
+com vetores <span
+class="math inline"><strong>w</strong> = (<em>x</em>, <em>y</em>, <em>z</em>) ∈ ℝ<sup>3</sup></span></p>
+<p><strong>Exemplo 11:</strong> Declarado esta transformação linear
+<span
+class="math inline"><strong>T</strong>(<em>x</em>, <em>y</em>) = (<em>x</em>, <em>y</em>, <em>x</em> + <em>y</em>)</span>.
+Iremos selecionar alguns vetores em <span
+class="math inline">ℝ<sup>2</sup></span> e calcular suas imagens sob a
+transformação <span class="math inline"><strong>T</strong></span>. Por
+exemplo, os vetores <span class="math inline">(1, 0)</span> e <span
+class="math inline">(0, 1)</span>. Para <span
+class="math inline">(1, 0)</span>, temos:</p>
+<p><span
+class="math inline"><strong>T</strong>(1, 0) = (1, 0, 1 + 0) = (1, 0, 1)</span></p>
+<p>e para <span class="math inline">(0, 1)</span>, temos:</p>
+<p><span
+class="math inline"><strong>T</strong>(0, 1) = (0, 1, 0 + 1) = (0, 1, 1)</span>.</p>
+<p>Segue a imagem em <span class="math inline">ℝ<sup>3</sup></span>:</p>
+<p><strong>Exemplo 12:</strong> Se tomarmos um vetor arbitrário e
+fazemos uma transformação linear idêntica, ou seja, <span
+class="math inline">1<em>α</em></span> = <span
+class="math inline"><em>α</em></span>, é uma transformação linear de
+<span class="math inline"><strong>V</strong></span> em <span
+class="math inline"><strong>V</strong></span>. A transformação é
+definida por <span class="math inline">0<em>α</em> = 0</span>, é também
+uma transformação linear de <span
+class="math inline"><strong>V</strong></span> em <span
+class="math inline"><strong>V</strong></span> <span class="citation"
+data-cites="hoffman1979"></span>.</p>
+<p>De acordo com o exemplo acima, percebe-se, que será uma função onde o
+gráfico passa a reta pela origem se supormos uma função afim, <span
+class="math inline">ℝ<sup>1</sup></span> em <span
+class="math inline">ℝ<sup>1</sup></span>. Uma transformação linear
+mantém combinações lineares <span
+class="math inline"><em>W</em> = [<strong>v</strong><sub>1</sub>, …, <strong>v</strong><sub><em>n</em></sub>]</span>
+são vetores que pertencem a <span
+class="math inline"><strong>V</strong></span> e possui seus escalares
+<span
+class="math inline"><em>c</em><sub>1</sub>, …, <em>c</em><sub><em>n</em></sub></span>,
+então:</p>
+<p><span
+class="math inline"><strong>T</strong>(<em>c</em><sub>1</sub><strong>v</strong><sub>1</sub>, …, <em>c</em><sub><em>n</em></sub><strong>v</strong><sub><em>n</em></sub>) = <strong>T</strong>(<em>c</em><sub>1</sub><strong>v</strong><sub>1</sub> + <em>c</em><sub>2</sub><strong>v</strong><sub>2</sub>) = <em>c</em><sub>1</sub>(<strong>T</strong><strong>v</strong><sub>1</sub>) + <em>c</em><sub>2</sub>(<strong>T</strong><strong>v</strong><sub>2</sub>)</span></p>
+<p><strong>Exemplo 13:</strong> Tomemos um caso que desejamos dobrar
+nosso espaço vetorial, dado um vetor <span
+class="math inline"><strong>V</strong> = (2, 2); <strong>V</strong><em>i</em><em>n</em>ℝ<sup>2</sup></span>,
+a transformação linear será dada por, <span
+class="math inline"><strong>T</strong>(<em>x</em>, <em>y</em>) = (2<em>x</em>, 2<em>y</em>)<em>i</em><em>n</em>ℝ<sup>2</sup></span>.
+Nosso domínio e contradomínio está em <span
+class="math inline">ℝ<sup>2</sup></span>, portanto o resultado será por
+<span
+class="math inline"><strong>W</strong> = (2 × 2, 2 × 2)∴ <strong>W</strong> = (4, 4)</span></p>
+<figure>
+<img src="t_exemplo13.png" />
+<figcaption>Exemplo 13.</figcaption>
+</figure>
+<p>Para uma matriz de transformação linear <span
+class="math inline"><strong>T</strong></span> de <span
+class="math inline"><strong>V</strong></span> em si mesma, existe uma
+matriz única <span class="math inline"><strong>A</strong></span> de
+dimensão <span class="math inline"><em>n</em> × <em>n</em></span> que
+representa <span class="math inline"><strong>T</strong></span>. Essa
+matriz é definida pela seguinte propriedade:</p>
+<p><span
+class="math inline"><strong>T</strong>(<strong>v</strong> = <strong>A</strong><strong>v</strong>)</span></p>
+<p>para todo vetor <span class="math inline"><strong>v</strong></span>
+em <span class="math inline"><strong>V</strong></span>. A matriz <span
+class="math inline"><strong>A</strong></span> é chamada de matriz de
+transformação de <span
+class="math inline"><strong>T</strong></span>.</p>
+<p>Consideremos agora no segmento da transformação linear e no campo da
+geometria o uso de operações como rotações, reflexões e projeções.
+Tomemos o espaço vetorial bidimensional <span
+class="math inline">ℝ<sup>2</sup></span> com base canônica <span
+class="math inline"><strong>e</strong><sub>1</sub> = (1, 0)</span> e
+<span
+class="math inline"><strong>e</strong><sub>2</sub> = (0, 1)</span>. A
+rotação de 90 graus no sentido anti-horário pode ser representada pela
+seguinte matriz de transformação:</p>
+<p><span
+class="math inline"><strong>R</strong> = [[0, 1], [−1, 0]]</span></p>
+<p>A matriz <span class="math inline"><strong>R</strong></span> chamada
+de matriz de rotação, possui algumas propriedades:</p>
+<ol>
+<li><p><strong>Ortogonalidade:</strong> A matriz <span
+class="math inline"><strong>R</strong></span> é ortogonal, ou seja sua
+transporta é inversa:</p>
+<p><span
+class="math inline"><strong>R</strong><sup><em>T</em></sup> = <strong>R</strong><sup>−1</sup></span></p></li>
+<li><p><strong>Determinante:</strong> O determinante da matriz <span
+class="math inline"><strong>R</strong></span> é igual a <span
+class="math inline">−1</span>.</p>
+<p><span
+class="math inline">det (<strong>R</strong>) = −1</span></p></li>
+</ol>
+<p>Ao rotacionar um vetor <span
+class="math inline"><strong>v</strong> = (<em>x</em>, <em>y</em>)</span>
+em 90 graus no sentido anti-horário, basta aplicar a matriz de rotação
+em <span class="math inline"><strong>v</strong></span>.</p>
+<p><span
+class="math inline"><strong>v</strong>′ = <strong>R</strong> × <strong>v</strong> = [[−1, 0], [0, −1]] × [<em>x</em>, <em>y</em>] = [<em>y</em>, −<em>x</em>]</span></p>
+<p>No caso em questão, o operador de rotação de um angulo qualquer como
+<span class="math inline"><em>θ</em></span> em torno e origem em <span
+class="math inline">ℝ<sup>2</sup></span>, tratando-se o operador <span
+class="math inline"><strong>R</strong> : ℝ<sup>2</sup> → ℝ<sup>2</sup></span>,
+resulta em <span
+class="math inline"><strong>R</strong>(<em>u</em> + <em>v</em>) = <strong>R</strong>(<em>u</em>) + <strong>R</strong>(<em>v</em>)</span>.</p>
+<figure>
+<img src="t_rotacao.png" />
+<figcaption>Retirado de <span class="citation"
+data-cites="nogueira2013"></span></figcaption>
+</figure>
+<h2 id="núcleo-de-uma-transformação-linear">Núcleo de uma Transformação
+Linear</h2>
+<p>Em transformações lineares. O núcleo, também chamado de espaço nulo
+de uma transformação linear <span
+class="math inline"><strong>T</strong></span>, denotado por <span
+class="math inline"><strong>N</strong>(<strong>T</strong>)</span>, é o
+conjunto de todos os vetores no domínio de <span
+class="math inline"><strong>T</strong></span> que são mapeados para o
+vetor nulo. Portanto, representa o conjunto de soluções para a equação
+homogênea <span
+class="math inline"><strong>T</strong>(<em>x</em>) = 0</span>. O núcleo
+é definido como:</p>
+<p><span
+class="math inline"><strong>N</strong>(<strong>T</strong>) = {<em>x</em> ∈ <strong>U</strong> ∣ <strong>T</strong>(<em>x</em>) = 0}</span></p>
+<p>onde <span class="math inline"><strong>U</strong></span> representa o
+domínio de <span class="math inline"><strong>T</strong></span>.</p>
+<p>Para <span class="math inline">$\mathbf{N}(\mathbf{T}) = \{\mathbf{v}
+\in \frac{\mathbf{V}}{\mathbf{T}(\mathbf{v})} = 0\}$</span>, segue o
+diagrama:</p>
+<figure>
+<img src="t_nucleo.png" />
+<figcaption>Retirado de <span class="citation"
+data-cites="steinbruch1987"></span></figcaption>
+</figure>
+<p>então, <span
+class="math inline"><strong>N</strong>(<strong>T</strong>) ⊂ <strong>V</strong></span>
+e <span
+class="math inline"><strong>N</strong>(<strong>T</strong>) ≠ ∅</span>,
+pois <span
+class="math inline">0 ∈ <strong>N</strong>(<strong>T</strong>)</span>,
+se <span class="math inline"><strong>T</strong>(0) = 0</span>.</p>
+<p>De acordo com <span class="citation" data-cites="lang2003"></span>,
+que, enfatizou a importância do núcleo na compreensão da injetividade de
+uma transformação linear, ou seja, a capacidade de preservar a
+identidade dos vetores. O núcleo de uma transformação linear possui duas
+propriedades, que regem:</p>
+<ol>
+<li><p>O núcleo de uma transformação linear <span
+class="math inline"><strong>T</strong> : <strong>V</strong> → <strong>W</strong></span>
+é um subespaço vetorial de <span
+class="math inline"><strong>V</strong></span>.</p></li>
+<li><p>Uma transformação linear <span
+class="math inline"><strong>T</strong> : <strong>V</strong> → <strong>W</strong></span>
+é injetora se, e somente se, <span
+class="math inline"><strong>N</strong>(<strong>T</strong>) = {0}</span>.</p></li>
+</ol>
+<p>Se <span
+class="math inline"><strong>v</strong><strong>)</strong><sub>1</sub></span>
+e <span
+class="math inline"><strong>v</strong><strong>)</strong><sub>2</sub></span>
+pertencem ao núcleo <span
+class="math inline"><strong>N</strong>(<strong>T</strong>)</span> e
+<span class="math inline"><em>k</em></span> um número real qualquer.
+Então, <span
+class="math inline"><strong>T</strong>(<strong>v</strong><sub>1</sub>) = 0</span>
+e <span
+class="math inline"><strong>T</strong>(<strong>v</strong><sub>2</sub>) = 0</span>.
+Logo:</p>
+<p><span
+class="math inline"><strong>T</strong>(<strong>v</strong><sub>1</sub> + <strong>v</strong><sub>2</sub>) = <strong>T</strong>(<strong>v</strong><sub>1</sub>) + <strong>T</strong>(<strong>v</strong><sub>2</sub>) = 0 + 0 = 0</span></p>
+<p>portanto, <span
+class="math inline"><strong>v</strong><sub>1</sub> + <strong>v</strong><sub>2</sub> ∈ <strong>N</strong>(<strong>T</strong>)</span>.</p>
+<h2 id="isomorfismo">Isomorfismo</h2>
+<p>Um conceito intrigante surge com o isomorfismo. Uma transformação
+linear <span
+class="math inline"><strong>T</strong> : <strong>U</strong> ↔︎ <strong>V</strong></span>,
+entre espaços vetoriais <span
+class="math inline"><strong>U</strong></span> e <span
+class="math inline"><strong>V</strong></span>, é considerado um
+isomorfismo se atender a duas condições cruciais:</p>
+<ol>
+<li><p><strong>Injetividade:</strong> <span
+class="math inline"><strong>T</strong></span> é injetora, o que
+significa que mapeia vetores distintos do domínio para vetores distintos
+no contradomínio. Em outras palavras, <span
+class="math inline"><strong>T</strong></span> preserva a
+identidade.</p></li>
+<li><p><strong>Sobrejetividade:</strong> <span
+class="math inline"><strong>T</strong></span> é sobrejetora, mapeando
+todo vetor em <span class="math inline"><strong>V</strong></span> a
+partir de um vetor em <span
+class="math inline"><strong>U</strong></span>. Isso significa que a
+imagem de <span class="math inline"><strong>T</strong></span> abrange
+todo o espaço <span
+class="math inline"><strong>V</strong></span>.</p></li>
+</ol>
+<p>Se <span class="math inline"><strong>T</strong></span> satisfaz ambas
+as condições, podemos afirmar que ela estabelece uma correspondência
+biunívoca entre <span class="math inline"><strong>U</strong></span> e
+<span class="math inline"><strong>V</strong></span>. Essa relação
+especial permite que representamos cada vetor em <span
+class="math inline"><strong>V</strong></span> por um único vetor em
+<span class="math inline"><strong>U</strong></span>, e vice-versa.</p>
+<p>O núcleo de uma transformação e seu isomorfismo tem uma conexão que é
+o Teorema do Núcleo e da Imagem. Este teorema estabelece uma relação
+crucial entre a dimensão do núcleo, a dimensão da imagem e a dimensão do
+domínio de uma transformação linear <span
+class="math inline"><strong>T</strong></span>:</p>
+<p><span
+class="math inline">dim (<strong>N</strong>(<strong>T</strong>)) + dim (<em>I</em><em>m</em>(<strong>T</strong>)) = dim (<strong>U</strong>)</span></p>
+<p>onde <span
+class="math inline"><em>I</em><em>m</em>(<strong>T</strong>)</span>
+representa a imagem de <span
+class="math inline"><em>I</em><em>m</em>(<strong>T</strong>)</span>, o
+conjunto de todos os vetores em <span
+class="math inline"><strong>V</strong></span> que são alcançados por
+<span class="math inline"><strong>T</strong></span>.</p>
+<p>O Teorema do Núcleo e da Imagem oferece ferramentas valiosas para
+determinar se uma transformação linear é um isomorfismo. Se a dimensão
+do núcleo for zero e a dimensão da imagem for igual à dimensão do
+domínio, podemos concluir que <span
+class="math inline"><strong>T</strong></span> é um isomorfismo.</p>
+<h1 id="aplicações-de-transformações-lineares">Aplicações de
+Transformações Lineares</h1>
+<p>Aguardando pela Caroline Pires...</p>
+<h1 id="considerações-finais">Considerações Finais</h1>
+<p>That’s all folks!</p>
+</body>
+</html>
