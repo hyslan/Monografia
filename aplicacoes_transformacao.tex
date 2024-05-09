@@ -1,12 +1,37 @@
 \chapter{Aplicações de Transformações Lineares}
-	As aplicações lineares pode ser usado em diversas áreas, como:
-	\nocite{sirlandro2017}   
+As TL têm contribuições significativas para o campo da AL. \cite{strang2010}, renomado matemático e professor do MIT - Massachusetts Institute of Technology, aborda, por exemplo, o processamento de sinais e imagens para compressão, filtragem, reconstrução e análise de dados, a análise de redes e sistemas dinâmicos da engenharia elétrica e ciência da computação, a geometria e a computação gráfica para manipular objetos em espaços tridimensionais, videogames e modelagem em três dimensões, além de cripto segurança e, mais recentemente, análise de dados em decisões gerenciais e aprendizagem de máquina. \nocite{pitombeira1971}
 
-\textbf{Gráficos Computacionais e processamento de imagem:} nesta área as transformações lineares são frequentemente usadas para rotacionar, escalar e transladar objetos ou imagens. Elas desempenham um papel crucial em transformações geométricas que são aplicados para criar efeitos em jogos, simulações e edições de imagens. \nocite{strang2010}
+A seguir, baseando em um estudo desenvolvido na Universidade Federal de Alagoas \cite{sirlandro2017}, apresentamos algumas aplicações das TL na área de engenharia.
 
-\textbf{Processamento de sinal e telecomunicações:} As transformações lineares são usadas em processamento de sinal para realizar operações como filtragem, modulação e demodulação. Elas são aplicadas em sistemas de comunicações como modulação de amplitude, modulação de frequência e modulação de fase, para transmitir e receber sinais de forma eficiente.  \nocite{pitombeira1971}
+\section{Circuitos Elétricos}
+Um circuito elétrico é composto por geradores que criam correntes elétricas com magnitudes limitadas pelos resistores posicionados em série ou em paralelo, exemplificado na figura 12. Existem três unidades básicas da física: potencial elétrico $\mathbf{V}$(volts = $\mathbf{V}$), resistência elétrica $\mathbf{R}$(ohms = $\omega$) e corrente elétrica $\mathbf{I}$(ampères = $\mathbf{A}$), ), como por exemplo, baterias, que mantêm a diferença de potencial constante entre seus dois terminais.
 
-\textbf{Análise de dados e aprendizado de máquina:} Em análise de dados e aprendizado de máquinas, as transformações lineares são usadas para representar e transformar conjunto de dados. Por exemplo, a análise de componentes principais (PCA) envolve uma transformação linear que projeta os dados em um novo espaço de menor dimensionalidade enquanto preserva a maior parte da variância.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.90]{a_fg1.png}
+	\caption{Retirado de \cite{sirlandro2017}}
+\end{figure}
+
+Para a montagem ou avaliação de um circuito, é necessário descobrir qual a corrente elétrica que passa em cada trecho do circuito e as quedas de potencial. Dependendo do fluxo da corrente elétrica, as intensidades de corrente e as quedas de tensão podem ser positivas ou negativas. Três princípios básicos devem ser considerados:
+
+\begin{itemize}
+	\item \textbf{Lei de Ohm:} A diferença de potencial medida através de um resistor é o produto da corrente que passa por ele e a sua resistência, representado por
+	
+	\centerline{$\mathbf{V} = \mathbf{R} \times \mathbf{I}$},
+	onde $\mathbf{V}$ é a tensão, em Volts($\mathbf{V}$, $\mathbf{R}$ é a resistência, em ohm($\omega$) e $\mathbf{I}$ é a corrente, em ampère($\mathbf{A}$).
+	
+	\item \textbf{Lei da corrente de Kirchhoff:} Se houver um ponto de ramificação, junção ou nó, a corrente pode se dividir e a soma das correntes que chegam no nó devem ser iguais à soma das correntes que saem do nó, representado por
+	
+	\centerline{$\mathbf{I} = \mathbf{I}_1 + \mathbf{I}_2$}
+	
+	\item \textbf{Lei das malhas ou Lei de Voltagem de Kirchhoff:} A soma algébrica das variações no potencial ao longo de qualquer malha fechada deve ser igual a zero. Para exemplificar a aplicação das leis, considera-se o circuito da figura
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.90]{a_fg2.png}
+		\caption{Retirado de \cite{sirlandro2017}}
+	\end{figure}
+\end{itemize}
 
 \textbf{Economia e finanças:} Nesta área as transformações lineares são aplicadas para descrever e analisar as relações entre variáveis econômicas, como oferta e demanda, investimentos e retornos financeiros. Elas são usadas em modelos de regressão linear, análise de séries temporais e precificação de ativos financeiros. \nocite{figueiredo2009}
 

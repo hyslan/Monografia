@@ -1,5 +1,5 @@
 \chapter{Espaços Vetoriais}
-Começaremos pela definição de um espaço vetorial, onde, podemos tratar como um vetor ao designar um elemento do espaço vetorial de um número $\mathbb{R}$ definido tal que:
+Começaremos pela definição de um espaço vetorial utilizando aquelas apresentadas por \cite{boldrini1980} e \cite{ulhoa2018}, onde, podemos tratar como um vetor ao designar um elemento do espaço vetorial de um número $\mathbb{R}$ definido tal que:
 
 \noindent\textbf{Definição 01:} Seja um conjunto V, não vazio, com duas operações: soma, $V \times V \rightarrow V$, e multiplicação por escalar, $R \times V \rightarrow V$, tais que, para quaisquer $u, v, w \in \mathbb{R}$, satisfaçam as propriedades: \nocite{boldrini1980}
 
@@ -198,27 +198,48 @@ Logo, $\mathbf{v}_j$ é uma combinação linear dos outros vetores.
 
 \section{Base}
 % ajustar, demonstrar e exemplificar
-Seja $V$ um espaço vetorial. Uma base para $V$ é um conjunto finito  $B = \{\mathbf{u}_1, \ldots, \mathbf{u}_n\} de elementos de $V$, tal que $B$ é Linearmente independente e gera o espaço vetorial $V$, ou seja, qualquer elemento de $V$ pode ser escrito como combinação linear dos elementos de $B$.
+Seja $\mathbf{V}$ um espaço vetorial. Uma base para $\mathbf{V}$ é um conjunto finito  $B = \{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$ de elementos de $\mathbf{V}$, tal que $B$ é Linearmente independente e gera o espaço vetorial $\mathbf{V}$, ou seja, qualquer elemento de $\mathbf{V}$ pode ser escrito como combinação linear dos elementos de $B$. O subespaço gerado por $B$ coincide com um subespaço $\mathbf{H}$ de um espaço vetorial $\mathbf{V}$, então
 
-A dimensão de um espaço vetorial $V$ é o número de elementos de uma base para $V$, que denotamos por $\dim(\mathbf{V})$. Caso $V = \{e\}$, o conjunto vazio é uma base para $V$ e $\dim(\mathbf{V}) = 0$.
+\centerline{$\mathbf{H} = Span\{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$}
 
-  Teorema 1: Seja V um espaço vetorial e $\{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$
- um conjunto de elementos que geram V. Então, dentre esses elementos podemos extrair uma base para V.
+A definição de base se aplica ao caso em $\mathbf{H} = \mathbf{V}$, porque todo espaço vetorial é subespaço dele mesmo. Assim, uma base de $\mathbf{V}$ é um conjunto linearmente independente que gera $\mathbf{V}$ \cite{lay1999}. Então se tivermos uma tripla ordenada linearmente independente $\mathbf{E} = (\va*{e}_1, \va*{e}_2, \va*{e}_3)$ será uma base de $\mathbf{V}^3$.
 
-    Teorema 2: Seja V um espaço vetorial gerado por um conjunto finito de n elementos $\mathbf{u}_1, \mathbf{u}_2, \ldots, \mathbf{u}_n$ 
-. Então, qualquer conjunto linearmente independente em V possui no máximo n elementos.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.90]{b_v3.png}
+	\caption{Retirado de \cite{camargo2005}, pg. 52.}
+\end{figure}
 
-    Teorema 3: Qualquer base de um espaço vetorial tem sempre o mesmo número (finito) de elementos.
+Para analisar as propriedades da base de um espaço vetorial de forma generalizada, consideremos desta forma.
 
-    Teorema 4 (Completamento): Qualquer conjunto de elementos L.I. de um espaço vetorial V de dimensão finita pode ser completado até formar uma base para V.
+\noindent\textbf{Teorema 3:} Sejam $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n \mid \mathbf{v} \neq 0$, estes que geram um espaço vetorial $\mathbf{V}$. Então, dentre este vetores podemos extrair uma base de $\mathbf{V}$.
 
-    Teorema 5: Seja V um espaço vetorial e U e W subespaços vetoriais de V, então:
+Se $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n$ são \textbf{LI}, então eles cumprem as condições para uma base, e não temos mais nada a fazer. Se $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n$ são \textbf{LD}, então existe uma combinação linear deles, com algum coeficiente não zero, obtendo o vetor nulo
 
-\centerline{$\dim(\mathbf{U} + \mathbf{W}) = \dim(\mathbf{U} + \dim(\mathbf{W}) - \dim(\mathbf{U} \cap \mathbf{W})}
+\centerline{$\mathbf{x}_1\mathbf{v}_1 + \mathbf{x}_2\mathbf{v}_2 + \ldots + \mathbf{x}_n\mathbf{v}_n = 0$}
+
+Se $\mathbf{x}_n \neq 0$. Então é possível escrever
+
+\centerline{$\mathbf{v}_n = \frac{-\mathbf{x}_1}{\mathbf{x}_n}\mathbf{v}_1 + \frac{-\mathbf{x}_2}{\mathbf{x}_n}\mathbf{v}_2 + \ldots + \frac{-\mathbf{x}_{n -1}}{\mathbf{x}_n}\mathbf{v}_{n -1}$}
+
+ora, $\mathbf{v}_n$ é uma combinação linear de $\mathbf{v}_1, \ldots, \mathbf{v}_{n -1}$ e, portanto, $\mathbf{v}_1, \ldots, \mathbf{v}_{n -1}$ geram $\mathbf{V}$. Se $\mathbf{v}_1, \ldots, \mathbf{v}_{n -1}$ for \textbf{LD}, então existe uma combinação linear deles que dará o vetor nulo e com algum coeficiente $\neq 0$, portanto, é possível extrair o vetor que corresponde a este coeficiente. Se continuarmos, com as iterações, após uma quantidade $n$ de passos, obteremos um subconjunto de $\{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ formado por $r(r \leqslant n)$ vetores \textbf{LI} $\mathbf{v}_{i1}, \mathbf{v}_{i2}, \ldots, \mathbf{v}_{ir}$, que ainda geram $\mathbf{V}$, por fim, formará uma base.
+
+\section{Dimensão}
+A dimensão de um espaço vetorial $\mathbf{V}$ é o número de elementos de uma base para $V$, que denotamos por $\dim(\mathbf{V})$. Caso $\mathbf{V} = \{e\}$, o conjunto vazio é uma base para $V$ e $\dim(\mathbf{V}) = 0$. Qualquer base de um espaço vetorial tem sempre o mesmo número de elementos.
+
+\noindent\textbf{Teorema 4:} Seja  $\mathbf{V}$ um espaço vetorial e $\{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$ um conjunto de elementos que geram  $\mathbf{V}$. Então, dentre esses elementos podemos extrair uma base para $\mathbf{V}$.
+
+\noindent\textbf{Teorema 5:} Seja $\mathbf{V}$ um espaço vetorial gerado por um conjunto finito de n elementos $\mathbf{u}_1, \mathbf{u}_2, \ldots, \mathbf{u}_n$. Então, qualquer conjunto linearmente independente em $\mathbf{V}$ possui no máximo $n$ elementos.
+
+\noindent\textbf{Teorema 6:} Qualquer base de um espaço vetorial tem sempre o mesmo número (finito) de elementos.
+
+\noindent\textbf{Teorema 7 (Completamento):} Qualquer conjunto de elementos \textbf{LI} de um espaço vetorial $\mathbf{V}$ de dimensão finita pode ser completado até formar uma base para $\mathbf{V}$.
+
+\noindent\textbf{Teorema 8:} Seja $\mathbf{V}$ um espaço vetorial e $\mathbf{U}$ e $\mathbf{W}$ subespaços vetoriais de $\mathbf{V}$, então:
+
+\centerline{$\dim(\mathbf{U} + \mathbf{W}) = \dim(\mathbf{U} + \dim(\mathbf{W}) - \dim(\mathbf{U} \cap \mathbf{W})$}
   
-    Teorema 6: Seja V um espaço vetorial e $\beta = \{\mathbf{u}_1, \ldots,\mathbf{u}_n\}$
- uma base ordenada para V, isto é, os elementos estão ordenados na ordem em que aparecem. Então, todo elemento de V pode ser escrito de maneira única como combinação linear de $\mathbf{u}_1, \ldots, \mathbf{u}_n$
-.
+\noindent\textbf{Teorema 9:} Seja $\mathbf{V}$ um espaço vetorial e $\beta = \{\mathbf{u}_1, \ldots,\mathbf{u}_n\}$ uma base ordenada para $\mathbf{V}$, isto é, os elementos estão ordenados na ordem em que aparecem. Então, todo elemento de $\mathbf{V}$ pode ser escrito de maneira única como combinação linear de $\mathbf{u}_1, \ldots, \mathbf{u}_n$.
 
 % _{m \times n}
 % subinscrito
