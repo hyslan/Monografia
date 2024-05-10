@@ -60,12 +60,12 @@ De acordo com o exemplo acima, percebe-se, que será uma função onde o gráfic
 
 \centerline{$\mathbf{T}(c_1\mathbf{v}_1, \ldots, c_n\mathbf{v}_n) = \mathbf{T}(c_1\mathbf{v}_1 + c_2\mathbf{v}_2) = c_1(\mathbf{T}\mathbf{v}_1) + c_2(\mathbf{T}\mathbf{v}_2)$}
 
-\noindent\textbf{Exemplo 13:} Tomemos um caso que desejamos dobrar nosso espaço vetorial, dado um vetor $\mathbf{V} = (2, 2); \mathbf{V} in \mathbb{R}^2$, a transformação linear será dada por, $\mathbf{T}(x, y) = (2x, 2y) in \mathbb{R}^2$. Nosso domínio e contradomínio está em $\mathbb{R}^2$, portanto o resultado será por $\mathbf{W} = (2 \times 2, 2 \times 2) \therefore \mathbf{W} = (4, 4)$
+\noindent\textbf{Exemplo 13:} Tomemos um caso que desejamos dobrar nosso espaço vetorial, dado um vetor $\mathbf{V} = (2, 2); \mathbf{V} \in \mathbb{R}^2$, a transformação linear será dada por, $\mathbf{T}(x, y) = (2x, 2y) \in \mathbb{R}^2$. Nosso domínio e contradomínio está em $\mathbb{R}^2$, portanto o resultado será por $\mathbf{W} = (2 \times 2, 2 \times 2) \therefore \mathbf{W} = (4, 4)$
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=1.30]{t_exemplo13.png}
-	\caption{Exemplo 13.}
+	\caption{Transformação linear dobro de um vetor.}
 \end{figure}
 
 Para uma matriz de transformação linear $\mathbf{T}$ de $\mathbf{V}$ em si mesma, existe uma matriz única $\mathbf{A}$ de dimensão $ n \times n$ que representa $\mathbf{T}$. Essa matriz é definida pela seguinte propriedade:
@@ -99,7 +99,7 @@ No caso em questão, o operador de rotação de um angulo qualquer como $\theta$
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.90]{t_rotacao.png}
-	\caption{Retirado de \cite{nogueira2013}}
+	\caption{Transformada de rotação de um vetor \cite{nogueira2013}.}
 \end{figure}
 
 \section{Núcleo de uma Transformação Linear}
@@ -114,7 +114,7 @@ Para $\mathbf{N}(\mathbf{T}) = \{\mathbf{v} \in \frac{\mathbf{V}}{\mathbf{T}(\ma
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=1.00]{t_nucleo.png}
-	\caption{Retirado de \cite{steinbruch1987}}
+	\caption{Diagrama do núcleo de uma transformação linear \cite{steinbruch1987}.}
 \end{figure}
 
 \noindent então, $\mathbf{N}(\mathbf{T}) \subset \mathbf{V}$ e $\mathbf{N}(\mathbf{T}) \neq \emptyset$, pois $0 \in \mathbf{N}(\mathbf{T})$, se $\mathbf{T}(0) = 0$.
@@ -137,7 +137,7 @@ Se $\mathbf{v)}_1$ e $\mathbf{v)}_2$ pertencem ao núcleo $\mathbf{N}(\mathbf{T}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=1.00]{t_nucleo2.png}
-	\caption{Retirado de \cite{boldrini1980}, pg. 152}
+	\caption{Imagem de um núcleo de transformação linear \cite{boldrini1980}, pg. 152.}
 \end{figure}
 
 Percebe-se que a imagem de uma transformação é $\mathbf{T}: \mathbf{V} \longrightarrow \mathbf{W}$ é um subespaço de $\mathbf{W}$, pois, se tomarmos dois vetores, $\mathbf{w}_1 + \mathbf{w}_2 \in Im\mathbf{T}$ e $\alpha\mathbf{w}_1 \in Im\mathbf{T}$. Existem vetores $\mathbf{v}$ e $\mathbf{u} \in \mathbf{V} \mid \mathbf{T}(\mathbf{v}) = \mathbf{w}_1 + \mathbf{w}_2$ e $\mathbf{T}(\mathbf{u}) = \alpha\mathbf{w}_1$.
@@ -148,7 +148,7 @@ Se $\mathbf{w}_1, \mathbf{w}_2 \in Im\mathbf{T}$, existem vetores $\mathbf{v}_1,
 \noindent e $\mathbf{T}(\mathbf{u}) = \mathbf{T}(\alpha\mathbf{v}_1) = \alpha\mathbf{T}(\mathbf{v}_1) = \alpha\mathbf{w}_1$, portanto, $Im\mathbf{T}$ é um subespaço vetorial de $\mathbf{W}$.
 
 \section{Isomorfismo}
-Um conceito intrigante surge com o isomorfismo. Uma transformação linear $\mathbf{T}: \mathbf{U} \longleftrightarrow \mathbf{V}$, entre espaços vetoriais $\mathbf{U}$ e $\mathbf{V}$, que é bijetora. Um isomorfismo só é válido se atender a duas condições cruciais:
+Um conceito intrigante surge com o isomorfismo. Uma transformação linear $\mathbf{T}: \mathbf{U} \longrightarrow \mathbf{V}$, entre espaços vetoriais $\mathbf{U}$ e $\mathbf{V}$, que é bijetora. Um isomorfismo só é válido se atender a duas condições cruciais:
 
 \begin{enumerate}
 	\item \textbf{Injetividade:} $\mathbf{T}$ é injetora, o que significa que mapeia vetores distintos do domínio para vetores distintos no contradomínio. Em outras palavras, $\mathbf{T}$ preserva a identidade.
@@ -158,7 +158,7 @@ Um conceito intrigante surge com o isomorfismo. Uma transformação linear $\mat
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.90]{t_isomorfismo.png}
-	\caption{Retirado de \cite{anton2010elementary}, pg. 445}
+	\caption{Diagrama do isomorfismo e sua imagem \cite{anton2010elementary}, pg. 445.}
 \end{figure}
 
 Se $\mathbf{T}$ satisfaz ambas as condições, podemos afirmar que ela estabelece uma correspondência biunívoca entre $\mathbf{U}$ e $\mathbf{V}$. Essa relação especial permite que representamos cada vetor em $\mathbf{V}$  por um único vetor em $\mathbf{U}$, e vice-versa. É notável também ressaltar, que, todo espaço vetorial $\mathbf{V}$ de dimensão $n$ é isomorfo a $\mathbb{R}^n$, portanto dois espaços vetoriais de dimensão finita são isomorfos se tiverem a mesma dimensão.
@@ -171,7 +171,7 @@ O núcleo de uma transformação e seu isomorfismo tem uma conexão que é o Teo
 
 O Teorema do Núcleo e da Imagem oferece ferramentas valiosas para determinar se uma transformação linear é um isomorfismo. Se a dimensão do núcleo for zero e a dimensão da imagem for igual à dimensão do domínio, podemos concluir que $\mathbf{T}$ é um isomorfismo.
 
-\noindent\textbf{Teorema:} Sejam $E, F$ espaços vetoriais de dimensão finita. Para toda transformação linear $\mathbf{T}: E \longrightarrow F$ tem-se que $\dim E = \dim \mathbf{N}(\mathbf{T}) + \dim Im(\mathbf{T})$.
+\noindent\textbf{Teorema 10:} Sejam $E, F$ espaços vetoriais de dimensão finita. Para toda transformação linear $\mathbf{T}: E \longrightarrow F$ tem-se que $\dim E = \dim \mathbf{N}(\mathbf{T}) + \dim Im(\mathbf{T})$.
 
 Se $\{\mathbf{T}(\mathbf{u}_1), \ldots, \mathbf{T}(\mathbf{u}_p)\}$ é uma base de $Im(\mathbf{T})$ e $\{\mathbf{v}_1, \ldots, \mathbf{v}_q\}$ é uma base de $\mathbf{N}(\mathbf{T})$ então $\{\mathbf{u}_1, \ldots, \mathbf{u}_p, \mathbf{v}_1, \ldots, \mathbf{v}_q\}$ é uma base de $E$. Logo, se tivemos
 
