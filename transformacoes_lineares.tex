@@ -3,18 +3,18 @@ Neste capítulo, iremos tratar sobre um tipo especial de função ou aplicação
 
 Nosso estudo das funções vetoriais lineares em questão, será focado, nas transformações lineares.
 
-\noindent\textbf{Definição 04:} Sejam $\mathbf{V}$ e $\mathbf{W}$ dois espaços vetoriais. Uma transformação linear (aplicação linear) é uma função de $\mathbf{V}$ em $\mathbf{W}$, $\mathbf{F}: \mathbf{V} \rightarrow \mathbf{W}$, que satisfaz as seguintes condições:
+\noindent\textbf{Definição 04:} Sejam $\mathbf{V}$ e $\mathbf{W}$ dois espaços vetoriais. Uma transformação linear (aplicação linear) é uma função de $\mathbf{V}$ em $\mathbf{W}$, tal que, $\mathbf{T}: \mathbf{V} \rightarrow \mathbf{W}$, que satisfaz as seguintes condições:
 
 \begin{enumerate}
-	\item Para quaisquer $\mathbf{u}$ e $\mathbf{v}$ em $\mathbf{V}$, $\mathbf{F}(\mathbf{u} + \mathbf{v}) = \mathbf{F}(u) + \mathbf{F}(v)$. \textbf{Homogeneidade}
-	\item Para quaisquer $k \in \mathbb{R}$ e $\mathbf{v} \in \mathbf{V}$, $F(k\mathbf{v}) = k\mathbf{F}(\mathbf{v})$. \textbf{Aditividade}
+	\item Para quaisquer $\mathbf{u}$ e $\mathbf{v}$ em $\mathbf{V}$, $\mathbf{T}(\mathbf{u} + \mathbf{v}) = \mathbf{T}(u) + \mathbf{T}(v)$.
+	\item Para quaisquer $k \in \mathbb{R}$ e $\mathbf{v} \in \mathbf{V}$, $F(k\mathbf{v}) = k\mathbf{F}(\mathbf{v})$.
 \end{enumerate}	
 
 No caso especial em que $\mathbf{V} = \mathbf{W}$, a transformação linear é denominada \textbf{operador linear} do espaço vetorial $\mathbf{V}$ \cite{anton2010elementary}.
 
 \noindent\centerline{Válido em: $\forall \mathbf{v}, \mathbf{v} \in \mathbf{V}$ e $\forall k \in \mathbb{R}$. }
 
-Trataremos $\mathbf{F}$ como $\mathbf{T}$ por convenção daqui em diante. Para se dizer que $\mathbf{T}$ é uma transformação linear do espaço vetorial $\mathbf{V}$ no espaço vetorial $\mathbf{W}$, será denotado por $\mathbf{T}:\mathbf{V}\longrightarrow\mathbf{W}$, onde $\mathbf{T}$ é a função, cada vetor $\mathbf{v} \in \mathbf{V}$ tem uma só imagem $\mathbf{w} \in \mathbf{W}$, indicado por $\mathbf{w} = \mathbf{T}(\mathbf{v})$.
+Para se dizer que $\mathbf{T}$ é uma transformação linear do espaço vetorial $\mathbf{V}$ no espaço vetorial $\mathbf{W}$, será denotado por $\mathbf{T}:\mathbf{V}\longrightarrow\mathbf{W}$, onde $\mathbf{T}$ é a função, cada vetor $\mathbf{v} \in \mathbf{V}$ tem uma só imagem $\mathbf{w} \in \mathbf{W}$, indicado por $\mathbf{w} = \mathbf{T}(\mathbf{v})$.
 
 Tomemos por dois conjuntos de vetores, $\mathbf{V} = \mathbb{R}^2$ e $\mathbf{W} = \mathbb{R}^3$.
 
@@ -74,7 +74,7 @@ Para uma matriz de transformação linear $\mathbf{T}$ de $\mathbf{V}$ em si mes
 
 \noindent para todo vetor $\mathbf{v}$ em $\mathbf{V}$. A matriz $\mathbf{A}$ é chamada de matriz de transformação de $\mathbf{T}$.
 
-% Primeira aplicação citada da transforamação
+% Primeira aplicação citada da transformação
 Consideremos agora no segmento da transformação linear e no campo da geometria o uso de operações como rotações, reflexões e projeções. Tomemos o espaço vetorial bidimensional $\mathbb{R}^2$ com base canônica $\mathbf{e}_1 = (1, 0)$ e $\mathbf{e}_2 = (0, 1)$. A rotação de 90 graus no sentido anti-horário pode ser representada pela seguinte matriz de transformação:
 
 \centerline{$\mathbf{R} = [[0, 1], [-1, 0]]$}
@@ -126,7 +126,7 @@ De acordo com \cite{lang2003}, que, enfatizou a importância do núcleo na compr
 	\item Uma transformação linear $\mathbf{T}: \mathbf{V} \longrightarrow \mathbf{W}$ é injetora se, e somente se, $\mathbf{N}(\mathbf{T}) = \{0\}$.
 \end{enumerate}
 
-Se $\mathbf{v)}_1$ e $\mathbf{v)}_2$ pertencem ao núcleo $\mathbf{N}(\mathbf{T})$ e $k$ um número real qualquer. Então, $\mathbf{T}(\mathbf{v}_1) = 0$ e $\mathbf{T}(\mathbf{v}_2) = 0$. Logo:
+Se $\mathbf{v}_1$ e $\mathbf{v}_2$ pertencem ao núcleo $\mathbf{N}(\mathbf{T})$ e $k$ um número real qualquer. Então, $\mathbf{T}(\mathbf{v}_1) = 0$ e $\mathbf{T}(\mathbf{v}_2) = 0$. Logo:
 
 \centerline{$\mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = 0 + 0 = 0$}
 
