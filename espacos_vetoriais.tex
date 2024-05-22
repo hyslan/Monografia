@@ -1,24 +1,22 @@
 \chapter{Espaços Vetoriais}
 Começaremos pela definição de um espaço vetorial utilizando aquelas apresentadas por \cite{boldrini1980} e \cite{ulhoa2018}, onde, podemos tratar como um vetor ao designar um elemento do espaço vetorial de um número $\mathbb{R}$ definido tal que:
 
-\noindent\textbf{Definição 01:} Seja um conjunto V, não vazio, com duas operações: soma, $V \times V \rightarrow V$, e multiplicação por escalar, $R \times V \rightarrow V$, tais que, para quaisquer $u, v, w \in \mathbb{R}$, satisfaçam as propriedades: \nocite{boldrini1980}
+\noindent\textbf{Definição 01:} Seja um conjunto V, não vazio, com duas operações: soma, $(v_1, v_2) \rightarrow v_1 + v_2$, e multiplicação por escalar, $(k, v) \rightarrow kv$, tais que, para quaisquer $u, v, w \in \mathbf{V}$ e $a, b \in \mathbb{R}$, satisfaçam as propriedades: \nocite{boldrini1980}
 
 \begin{enumerate}
-	\item $(u + v) + w = u + (v + w), \forall$ $u, v, w \in V$ (propriedade associativa.) 
 	\item $1u = u$.
-	\item $u + v = v + u, \forall$ $u, v \in V$ (propriedade comutativa).
 	\item $\exists$ $0$ $\in V$ tal que $u + 0 = u$.
 	\item $\exists$ $-u \in V$ tal que $u + (-u) = 0$.
 	\item $a(u + v) = au + av$.
 	\item $(a + b)v = av + bv$.
 	\item $(ab)v = a(bv)$.
-	\item $1u = u$.
 \end{enumerate}
 
 \noindent\textbf{Observação:} $\textbf{0}$ é o vetor nulo. \nocite{ulhoa2018}
 
 \noindent\textbf{Observação:} Limitaremos nossa discussão, demonstrações e aplicações dentro do conjunto dos números reais apenas.
 
+% Corrigir...
 \noindent\textbf{Exemplo 01:} Suponhamos uma matriz $M_{(2, 2)}$, onde, é denotado por $M_{(m,n)}$, dado por $M = [a_{ij}]_{m \times n}$ podendo ser interpretada dessa forma, $V = M_{(2, 2)}$, onde $V$, é um conjunto não vazio, seu escalar pertencente ao conjunto dos $\mathbb{R}$, que satisfazem todas as propriedades de um espaço vetorial.
 
 \begin{figure}[H]
@@ -114,8 +112,9 @@ Assim sendo, constata-se que o conjunto de todas as matrizes simétricas configu
 \section{Combinação Linear}
 Dentro de um espaço vetorial, conforme demonstrado que podemos ter subconjuntos de espaços vetoriais, é possível a obtenção de novos vetores a partir de vetores dados \cite{boldrini1980}.
 
-\noindent\textbf{Definição 03:} Sejam $V$ um espaço vetorial $\mathbb{R}$, $v_1, v_2, \ldots, v_n \in V$ e $a_1, \ldots, a_n \in \mathbb{R}$. Então, o vetor $v = a_1v_1 + a_2v_2 + \ldots + a_nv_n$ é um elemento de $V$ podendo ser chamado combinação linear de $v_1, \ldots, v_n$.
+\noindent\textbf{Definição 03:} Sejam $V$ um espaço vetorial, $v_1, v_2, \ldots, v_n \in V$ e $a_1, \ldots, a_n \in \mathbb{R}$. Então, o vetor $v = a_1v_1 + a_2v_2 + \ldots + a_nv_n$ é um elemento de $V$ podendo ser chamado combinação linear de $v_1, \ldots, v_n$.
 
+% Corrigir...
 Se $V \subset W$, podemos adotar a notação $W = [v_1, \ldots, v_n]$, onde expandindo-o
 
 \centerline{$W = [v_1, \ldots, v_n] = \{v \in V; v = a_1v_1 + \ldots + a_nv_n, a_i \in \mathbb{R}, 1 \leqslant i \leqslant n\}$}
@@ -176,6 +175,7 @@ Dado a combinação linear, devemos saber, a priori, se algum desses vetores nã
 
 \noindent\textbf{Teorema 02:} Uma combinação linear é \textbf{LD} se, e somente se um destes vetores for uma combinação linear dos outros.
 
+% Corrigir...
 \centerline{$\{\mathbf{v}_1, \ldots,  \mathbf{v}_n \} =$ \textbf{LD} $\iff \exists i \mid \sum_{i \neq j} c_i \mathbf{v}_i$}
 
 \noindent\textbf{Demonstração:} Sejam $\mathbf{v}_1, \ldots, \mathbf{v}_n$ \textbf{LD} e $a_1\mathbf{v}_1 + \ldots + a_j\mathbf{v}_j + \ldots + a_n\mathbf{v}_n = 0$
@@ -199,6 +199,7 @@ Logo, $\mathbf{v}_j$ é uma combinação linear dos outros vetores.
 \section{Base}
 Seja $\mathbf{V}$ um espaço vetorial. Uma base para $\mathbf{V}$ é um conjunto finito  $B = \{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$ de elementos de $\mathbf{V}$, tal que $B$ é Linearmente independente e gera o espaço vetorial $\mathbf{V}$, ou seja, qualquer elemento de $\mathbf{V}$ pode ser escrito como combinação linear dos elementos de $B$. O subespaço gerado por $B$ coincide com um subespaço $\mathbf{H}$ de um espaço vetorial $\mathbf{V}$, então
 
+% Corrigir...
 \centerline{$\mathbf{H} = Span\{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$}
 
 A definição de base se aplica ao caso em $\mathbf{H} = \mathbf{V}$, porque todo espaço vetorial é subespaço dele mesmo. Assim, uma base de $\mathbf{V}$ é um conjunto linearmente independente que gera $\mathbf{V}$ \cite{lay1999}. Então se tivermos uma tripla ordenada linearmente independente $\mathbf{E} = (\va*{e}_1, \va*{e}_2, \va*{e}_3)$ será uma base de $\mathbf{V}^3$.
