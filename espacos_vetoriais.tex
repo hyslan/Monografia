@@ -16,8 +16,7 @@ Começaremos pela definição de um espaço vetorial utilizando aquelas apresent
 
 \noindent\textbf{Observação:} Limitaremos nossa discussão, demonstrações e aplicações dentro do conjunto dos números reais apenas.
 
-% Corrigir...
-\noindent\textbf{Exemplo 01:} Suponhamos uma matriz $M_{(2, 2)}$, onde, é denotado por $M_{(m,n)}$, dado por $M = [a_{ij}]_{m \times n}$ podendo ser interpretada dessa forma, $V = M_{(2, 2)}$, onde $V$, é um conjunto não vazio, seu escalar pertencente ao conjunto dos $\mathbb{R}$, que satisfazem todas as propriedades de um espaço vetorial.
+\noindent\textbf{Exemplo 01:} Suponhamos dois pontos no plano, o ponto $\mathbf{O}_{(0, 0)}$ sendo a origem e $\mathbf{M}_{(2, 2)}$, onde, se $\vb{V}$, é um conjunto não vazio e possui a soma desses dois pontos ($\mathbf{O}_{(0, 0)}$ e $\mathbf{M}_{(2, 2)}$). Além disso, seu escalar pertencente ao conjunto dos $\mathbb{R}$, que satisfazem todas as propriedades de um espaço vetorial. Logo $\vb{V}$ é um espaço vetorial.
 
 \begin{figure}[H]
 	\centering
@@ -44,15 +43,19 @@ A = \begin{bmatrix}
 
 \noindent\textbf{Exemplo 03:} Consideremos $n-uplas$ de números reais.
 
-$V = \mathbb{R}^n = \{(x_1, x_2, \ldots, x_n); x_i \in \mathbb{R}\}$
+\begin{equation}
+	V = \mathbb{R}^n = \{(x_1, x_2, \ldots, x_n); x_i \in \mathbb{R}\}
+\end{equation}
 
-e se $u = (x_1, x_2, \ldots, x_n), v = (y_1, y_2, \ldots, y_n)$ e $a \in \mathbb{R}$,
+\noindent e se \( u = (x_1, x_2, \ldots, x_n) \), \( v = (y_1, y_2, \ldots, y_n) \) e \( a \in \mathbb{R} \),
 
-$u + v = (x_1 + y_1, x_2, y_2, \ldots, x_n, y_n)$ e $au = (ax_1, ax_2, \ldots, ax_n)$
+\[
+u + v = (x_1 + y_1, x_2 + y_2, \ldots, x_n + y_n) \quad \text{e} \quad a u = (ax_1, ax_2, \ldots, ax_n)
+\]
+
 
 Por tratarmos de uma quantidade $n$ de números, o campo tridimensional deixa de ser visto, e passamos a ter $\mathbb{R}^n$ dimensões, as propriedades não deixam de valer independente a quantidade de dimensões.
 
-% SubEspaço vetorial
 \section{Subespaços Vetoriais}
 Nesta seção iremos introduzir conceitos no estudo de espaço vetorial para subespaço vetorial.
 
@@ -114,10 +117,13 @@ Dentro de um espaço vetorial, conforme demonstrado que podemos ter subconjuntos
 
 \noindent\textbf{Definição 03:} Sejam $V$ um espaço vetorial, $v_1, v_2, \ldots, v_n \in V$ e $a_1, \ldots, a_n \in \mathbb{R}$. Então, o vetor $v = a_1v_1 + a_2v_2 + \ldots + a_nv_n$ é um elemento de $V$ podendo ser chamado combinação linear de $v_1, \ldots, v_n$.
 
-% Corrigir...
-Se $V \subset W$, podemos adotar a notação $W = [v_1, \ldots, v_n]$, onde expandindo-o
 
-\centerline{$W = [v_1, \ldots, v_n] = \{v \in V; v = a_1v_1 + \ldots + a_nv_n, a_i \in \mathbb{R}, 1 \leqslant i \leqslant n\}$}
+Seja \( V \) um subespaço de \( W \) (\( V \subset W \)). Se \( W \) é gerado pelos vetores \( v_1, \ldots, v_n \), podemos adotar a notação \( W = [v_1, \ldots, v_n] \). Isso significa que \( W \) é o conjunto de todas as combinações lineares dos vetores \( v_1, \ldots, v_n \). A notação expandida é:
+
+\begin{equation}
+	W = [v_1, \ldots, v_n] = \left\{ v \in W \;\middle|\; v = a_1v_1 + \ldots + a_nv_n, \; a_i \in \mathbb{R}, \; 1 \leq i \leq n \right\}
+\end{equation}
+
 
 \noindent\textbf{Exemplo 07:} Presuma um vetor $V = \mathbb{R}^3, v \in V, v \neq 0$. Se imaginarmos sua reta que contém o vetor $v$, onde, $[v] = {av: a \in \mathbb{R}}$
 
@@ -150,43 +156,51 @@ Se $V \subset W$, podemos adotar a notação $W = [v_1, \ldots, v_n]$, onde expa
 
 Definimos a combinação linear dos vetores $\mathbf{v}$ e $\mathbf{w}$ como:
 
-\[
-a\mathbf{v} + b\mathbf{w} = 3 \begin{pmatrix} 2 \\ 3 \\ 1 \end{pmatrix} + (-1) \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}.
-\]
+\begin{equation}
+	a\mathbf{v} + b\mathbf{w} = 3 \begin{pmatrix} 2 \\ 3 \\ 1 \end{pmatrix} + (-1) \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}.
+\end{equation}
 
 Aplicando as operações, obtemos:
 
-\[
-a\mathbf{v} + b\mathbf{w} = \begin{pmatrix} 6 \\ 9 \\ 3 \end{pmatrix} + \begin{pmatrix} -1 \\ 1 \\ -2 \end{pmatrix} = \begin{pmatrix} 6 - 1 \\ 9 + 1 \\ 3 - 2 \end{pmatrix} = \begin{pmatrix} 5 \\ 10 \\ 1 \end{pmatrix}.
-\]
+\begin{equation}
+	a\mathbf{v} + b\mathbf{w} = \begin{pmatrix} 6 \\ 9 \\ 3 \end{pmatrix} + \begin{pmatrix} -1 \\ 1 \\ -2 \end{pmatrix} = \begin{pmatrix} 6 - 1 \\ 9 + 1 \\ 3 - 2 \end{pmatrix} = \begin{pmatrix} 5 \\ 10 \\ 1 \end{pmatrix}.
+\end{equation}
 
 Portanto, a combinação linear dos vetores $\mathbf{v}$ e $\mathbf{w}$ com os coeficientes $a = 3$ e $b = -1$ é o vetor 
 
-\centerline{$\begin{pmatrix} 5 \\ 10 \\ 1 \end{pmatrix}$}
+\[
+\begin{pmatrix} 5 \\ 10 \\ 1 \end{pmatrix}
+\]
+
 
 \section{Dependência e Independência Linear}
 Dado a combinação linear, devemos saber, a priori, se algum desses vetores não é combinação linear dos outros e assim por diante. Para isto precisamos saber sua dependência e independência linear.\nocite{camargo2005}
 
 \noindent\textbf{Definição 03:} Sejam $\mathbf{V}$ um espaço vetorial e $\mathbf{v}_1, \ldots, \mathbf{v}_n \in \mathbf{V}$. Dizemos que o conjunto ${\mathbf{v}_1, \ldots, \mathbf{v}_n}$ é linearmente independente (\textbf{LI}), ou que os vetores $\mathbf{v}_1, \ldots, \mathbf{v}_n$ são \textbf{LI}, se a equação
 
-\centerline{$a_1\mathbf{v}_1 + \ldots + a_n\mathbf{v}_n = 0$}
+\begin{equation}
+	a_1\mathbf{v}_1 + \ldots + a_n\mathbf{v}_n = 0
+\end{equation}
 
 \noindent implica que $a_1 = a_2 = \ldots = a_n = 0$. No caso em que exista algum $a_i \neq 0$ dizemos que ${v_1, \ldots, v_n}$ é linearmente dependente (\textbf{LD}), ou que os vetores $\mathbf{v}_1, \ldots, \mathbf{v}_n$ são \textbf{LD}.
 
-\noindent\textbf{Teorema 02:} Uma combinação linear é \textbf{LD} se, e somente se um destes vetores for uma combinação linear dos outros.
+\noindent\textbf{Teorema 02:} Um conjunto de vetores é linearmente dependente (\textbf{LD}) se, e somente se, pelo menos um dos vetores pode ser escrito como uma combinação linear dos outros. Logo,
 
-% Corrigir...
-\centerline{$\{\mathbf{v}_1, \ldots,  \mathbf{v}_n \} =$ \textbf{LD} $\iff \exists i \mid \sum_{i \neq j} c_i \mathbf{v}_i$}
+\begin{equation}
+\{\mathbf{v}_1, \ldots, \mathbf{v}_n \} \text{ é \textbf{LD}} \iff \exists i \in \{1, \ldots, n\} \text{ tal que } \mathbf{v}_i = \sum_{j \neq i} c_j \mathbf{v}_j \text{ para alguns } c_j \in \mathbb{R}
+\end{equation}
 
 \noindent\textbf{Demonstração:} Sejam $\mathbf{v}_1, \ldots, \mathbf{v}_n$ \textbf{LD} e $a_1\mathbf{v}_1 + \ldots + a_j\mathbf{v}_j + \ldots + a_n\mathbf{v}_n = 0$
 
-Um dos coeficientes deve ser diferente de zero. Suponhamos que seja $a_j \neq 0$. Então 
+\noindent Um dos coeficientes deve ser diferente de zero. Suponhamos que seja $a_j \neq 0$. Então 
 
-\centerline{$\mathbf{v}_j = -\frac{1}{a_j}(a_1\mathbf{v}_1 + \ldots + a_{j - 1}\mathbf{v}_{j - 1} + + a_{j + 1}\mathbf{v}_{j + 1} + \ldots + a_n\mathbf{v)_n}$}
+\begin{equation}
+	\mathbf{v}_j = -\frac{1}{a_j}(a_1\mathbf{v}_1 + \ldots + a_{j - 1}\mathbf{v}_{j - 1} + a_{j + 1}\mathbf{v}_{j + 1} + \ldots + a_n\mathbf{v}_n)
+\end{equation}
 
-\centerline{ e portanto $\mathbf{v}_j = -\frac{a_1}{a_j}\mathbf{v}_1 + \ldots -\frac{a_n}{a_j}\mathbf{v}_n$}
+\noindent e portanto $\mathbf{v}_j = -\frac{a_1}{a_j}\mathbf{v}_1 + \ldots -\frac{a_n}{a_j}\mathbf{v}_n$
 
-Logo, $\mathbf{v}_j$ é uma combinação linear dos outros vetores.
+\noindent Logo, $\mathbf{v}_j$ é uma combinação linear dos outros vetores.
 
 \noindent\textbf{Exemplo 10:} Sejam $\mathbf{V} = \mathbb{R}^3$ e $v_1, v_2 \in \mathbf{V}$, $\{\mathbf{v}_1, \mathbf{v}_2\}$ é \textbf{LD} $\iff \mathbf{v}_1$ e $\mathbf{v}_2$ estiverem na mesma reta, que passa pela origem. $(\mathbf{v}_1 = \lambda\mathbf{v}_2)$.
 
@@ -197,10 +211,11 @@ Logo, $\mathbf{v}_j$ é uma combinação linear dos outros vetores.
 \end{figure}
 
 \section{Base}
-Seja $\mathbf{V}$ um espaço vetorial. Uma base para $\mathbf{V}$ é um conjunto finito  $B = \{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$ de elementos de $\mathbf{V}$, tal que $B$ é Linearmente independente e gera o espaço vetorial $\mathbf{V}$, ou seja, qualquer elemento de $\mathbf{V}$ pode ser escrito como combinação linear dos elementos de $B$. O subespaço gerado por $B$ coincide com um subespaço $\mathbf{H}$ de um espaço vetorial $\mathbf{V}$, então
+Seja $\mathbf{V}$ um espaço vetorial. Uma base para $\mathbf{V}$ é um conjunto finito $B = \{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$ de elementos de $\mathbf{V}$ tal que $B$ é linearmente independente e gera o espaço vetorial $\mathbf{V}$, ou seja, qualquer elemento de $\mathbf{V}$ pode ser escrito como combinação linear dos elementos de $B$. Se o subespaço gerado por $B$ coincide com um subespaço $\mathbf{H}$ de um espaço vetorial $\mathbf{V}$, então
 
-% Corrigir...
-\centerline{$\mathbf{H} = Span\{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$}
+\begin{equation}
+\mathbf{H} = \text{Span}\{\mathbf{b}_1, \ldots, \mathbf{b}_p\}
+\end{equation}
 
 A definição de base se aplica ao caso em $\mathbf{H} = \mathbf{V}$, porque todo espaço vetorial é subespaço dele mesmo. Assim, uma base de $\mathbf{V}$ é um conjunto linearmente independente que gera $\mathbf{V}$ \cite{lay1999}. Então se tivermos uma tripla ordenada linearmente independente $\mathbf{E} = (\va*{e}_1, \va*{e}_2, \va*{e}_3)$ será uma base de $\mathbf{V}^3$.
 
@@ -216,11 +231,15 @@ Para analisar as propriedades da base de um espaço vetorial de forma generaliza
 
 Se $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n$ são \textbf{LI}, então eles cumprem as condições para uma base, e não temos mais nada a fazer. Se $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n$ são \textbf{LD}, então existe uma combinação linear deles, com algum coeficiente não zero, obtendo o vetor nulo
 
-\centerline{$\mathbf{x}_1\mathbf{v}_1 + \mathbf{x}_2\mathbf{v}_2 + \ldots + \mathbf{x}_n\mathbf{v}_n = 0$}
+\begin{equation}
+\mathbf{x}_1\mathbf{v}_1 + \mathbf{x}_2\mathbf{v}_2 + \ldots + \mathbf{x}_n\mathbf{v}_n = 0
+\end{equation}
 
 Se $\mathbf{x}_n \neq 0$. Então é possível escrever
 
-\centerline{$\mathbf{v}_n = \frac{-\mathbf{x}_1}{\mathbf{x}_n}\mathbf{v}_1 + \frac{-\mathbf{x}_2}{\mathbf{x}_n}\mathbf{v}_2 + \ldots + \frac{-\mathbf{x}_{n -1}}{\mathbf{x}_n}\mathbf{v}_{n -1}$}
+\begin{equation}
+\mathbf{v}_n = \frac{-\mathbf{x}_1}{\mathbf{x}_n}\mathbf{v}_1 + \frac{-\mathbf{x}_2}{\mathbf{x}_n}\mathbf{v}_2 + \ldots + \frac{-\mathbf{x}_{n -1}}{\mathbf{x}_n}\mathbf{v}_{n -1}
+\end{equation}
 
 ora, $\mathbf{v}_n$ é uma combinação linear de $\mathbf{v}_1, \ldots, \mathbf{v}_{n -1}$ e, portanto, $\mathbf{v}_1, \ldots, \mathbf{v}_{n -1}$ geram $\mathbf{V}$. Se $\mathbf{v}_1, \ldots, \mathbf{v}_{n -1}$ for \textbf{LD}, então existe uma combinação linear deles que dará o vetor nulo e com algum coeficiente $\neq 0$, portanto, é possível extrair o vetor que corresponde a este coeficiente. Se continuarmos, com as iterações, após uma quantidade $n$ de passos, obteremos um subconjunto de $\{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ formado por $r(r \leqslant n)$ vetores \textbf{LI} $\mathbf{v}_{i1}, \mathbf{v}_{i2}, \ldots, \mathbf{v}_{ir}$, que ainda geram $\mathbf{V}$, por fim, formará uma base.
 

@@ -22,11 +22,15 @@ Uma transformação de $\mathbf{T}:\mathbb{R}^2\longrightarrow\ \mathbb{R}^3$ as
 
 \noindent\textbf{Exemplo 11:} Declarado esta transformação linear $\mathbf{T}(x, y) = (x, y, x + y)$. Iremos selecionar alguns vetores em $\mathbb{R}^2$ e calcular suas imagens sob a transformação $\mathbf{T}$. Por exemplo, os vetores $(1, 0)$ e $(0, 1)$. Para $(1, 0)$, temos: 
 
-\centerline{$\mathbf{T}(1, 0) = (1, 0, 1 +0) = (1, 0, 1)$}
+\begin{equation}
+	\mathbf{T}(1, 0) = (1, 0, 1 +0) = (1, 0, 1)
+\end{equation}
 
 \noindent e para $(0, 1)$, temos:
 
-\centerline{$\mathbf{T}(0, 1) = (0, 1, 0 + 1) = (0, 1, 1)$.}
+\begin{equation}
+\mathbf{T}(0, 1) = (0, 1, 0 + 1) = (0, 1, 1)
+\end{equation}
 
 Segue a imagem em $\mathbb{R}^3$:
 
@@ -58,7 +62,9 @@ Segue a imagem em $\mathbb{R}^3$:
 
 De acordo com o exemplo acima, percebe-se, que será uma função onde o gráfico passa a reta pela origem se supormos uma função afim, $\mathbb{R}^1$ em $\mathbb{R}^1$. Uma transformação linear mantém combinações lineares $W = [\mathbf{v}_1, \ldots, \mathbf{v}_n]$ são vetores que pertencem a $\mathbf{V}$ e possui seus escalares $c_1, \ldots, c_n$, então:
 
-\centerline{$\mathbf{T}(c_1\mathbf{v}_1, \ldots, c_n\mathbf{v}_n) = \mathbf{T}(c_1\mathbf{v}_1 + c_2\mathbf{v}_2) = c_1(\mathbf{T}\mathbf{v}_1) + c_2(\mathbf{T}\mathbf{v}_2)$}
+\begin{equation}
+\mathbf{T}(c_1\mathbf{v}_1, \ldots, c_n\mathbf{v}_n) = \mathbf{T}(c_1\mathbf{v}_1 + c_2\mathbf{v}_2) = c_1(\mathbf{T}\mathbf{v}_1) + c_2(\mathbf{T}\mathbf{v}_2)
+\end{equation}
 
 \noindent\textbf{Exemplo 13:} Tomemos um caso que desejamos dobrar nosso espaço vetorial, dado um vetor $\mathbf{V} = (2, 2); \mathbf{V} \in \mathbb{R}^2$, a transformação linear será dada por, $\mathbf{T}(x, y) = (2x, 2y) \in \mathbb{R}^2$. Nosso domínio e contradomínio está em $\mathbb{R}^2$, portanto o resultado será por $\mathbf{W} = (2 \times 2, 2 \times 2) \therefore \mathbf{W} = (4, 4)$
 
@@ -92,7 +98,9 @@ A matriz $\mathbf{R}$ chamada de matriz de rotação, possui algumas propriedade
 
 Ao rotacionar um vetor $\mathbf{v} = (x, y)$ em 90 graus  no sentido anti-horário, basta aplicar a matriz de rotação em $\mathbf{v}$.
 
-\centerline{$\mathbf{v}' = \mathbf{R} \times \mathbf{v} = [[-1, 0], [0, -1]] \times [x, y] = [y, -x]$}
+\begin{equation}
+\mathbf{v}' = \mathbf{R} \times \mathbf{v} = [[-1, 0], [0, -1]] \times [x, y] = [y, -x]
+\end{equation}
 
 No caso em questão, o operador de rotação de um angulo qualquer como $\theta$ em torno e origem em $\mathbb{R}^2$, tratando-se o operador $\mathbf{R}: \mathbb{R}^2 \longrightarrow \mathbb{R}^2$, resulta em $\mathbf{R}(u + v) = \mathbf{R}(u) + \mathbf{R}(v)$.
 
@@ -128,7 +136,9 @@ De acordo com \cite{lang2003}, que, enfatizou a importância do núcleo na compr
 
 Se $\mathbf{v}_1$ e $\mathbf{v}_2$ pertencem ao núcleo $\mathbf{N}(\mathbf{T})$ e $k$ um número real qualquer. Então, $\mathbf{T}(\mathbf{v}_1) = 0$ e $\mathbf{T}(\mathbf{v}_2) = 0$. Logo:
 
-\centerline{$\mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = 0 + 0 = 0$}
+\begin{equation}
+\mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = 0 + 0 = 0
+\end{equation}
 
 \noindent portanto, $\mathbf{v}_1 + \mathbf{v}_2 \in \mathbf{N}(\mathbf{T})$. 
 
@@ -144,7 +154,10 @@ Percebe-se que a imagem de uma transformação é $\mathbf{T}: \mathbf{V} \longr
 
 Se $\mathbf{w}_1, \mathbf{w}_2 \in Im\mathbf{T}$, existem vetores $\mathbf{v}_1, \mathbf{v}_2 \in \mathbf{V} \mid \mathbf{T}(\mathbf{v}_1) = \mathbf{w}_1$ e $\mathbf{T}(\mathbf{v}_2) = \mathbf{w}_2$. Tendo $\mathbf{v} = \mathbf{v}_1 + \mathbf{v}_2$ e $\mathbf{u} = \alpha\mathbf{v}_1$, logo:
 
-\centerline{$\mathbf{T}(\mathbf{v}) = \mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = \mathbf{w}_1 + \mathbf{w}_2$} 
+\begin{equation}
+\mathbf{T}(\mathbf{v}) = \mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = \mathbf{w}_1 + \mathbf{w}_2
+\end{equation}
+
 \noindent e $\mathbf{T}(\mathbf{u}) = \mathbf{T}(\alpha\mathbf{v}_1) = \alpha\mathbf{T}(\mathbf{v}_1) = \alpha\mathbf{w}_1$, portanto, $Im\mathbf{T}$ é um subespaço vetorial de $\mathbf{W}$.
 
 \section{Isomorfismo}
