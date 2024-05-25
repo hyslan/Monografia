@@ -59,16 +59,16 @@ Por tratarmos de uma quantidade $n$ de números, o campo tridimensional deixa de
 \section{Subespaços Vetoriais}
 Nesta seção iremos introduzir conceitos no estudo de espaço vetorial para subespaço vetorial.
 
-\noindent\textbf{Definição 02:} Dado um espaço vetorial V, um subconjunto W, não vazio, será um subespaço vetorial de V se:
+\noindent\textbf{Definição 02:} Dado um espaço vetorial $\vb{V}$, um subconjunto $\vb{W}$, não vazio, será um subespaço vetorial de $\vb{V}$ se:
 \begin{enumerate}
-	\item Para quaisquer $u, v \in W$ tivermos $u + v \in W$.
-	\item Para quaisquer $a \in R, u \in W$ tivermos $au \in W$.
+	\item Para quaisquer $u, v \in \vb{W}$ tivermos $u + v \in \vb{W}$.
+	\item Para quaisquer $a \in \mathbb{R}, u \in \vb{W}$ tivermos $au \in \vb{W}$.
 	\end{enumerate}
 
-\noindent\textbf{Teorema 01:} Um subconjunto não vazio $W$ de $V$ é um subespaço de $V$ se, e somente se, para cada par de vetores $\alpha, \beta$ em $W$ e cada escalar $c$ em $F$, o vetor $c\alpha + \beta$ está em $W$.
+\noindent\textbf{Teorema 01:} Um subconjunto não vazio $\vb{W}$ de $\vb{V}$ é um subespaço de $\vb{V}$ se, e somente se, para cada par de vetores $\vec{u}, \vec{v}$ em $\vb{W}$ e cada escalar $\alpha$ em $\mathbb{R}$, o vetor $\alpha\vec{u} + \vec{v}$ está em $\vb{W}$.
 
-\noindent\textbf{Demonstração:} Suponhamos que $W$ seja um subconjunto não vazio de $V$, tal que, $c\alpha + \beta$ pertença a $W$ para todos os vetores $\alpha$, $\beta$ em $W$ e todos escalares $c$ em $F$. Como $W$ é não vazio, existe um vetor $\rho$ em $W$, logo $(-1) \rho + \rho = 0$ está em $W$. Então se $\alpha$ é um vetor arbitrário em $W$ e $c$ é um escalar arbitrário, o vetor $c\alpha = c\alpha + 0$ está em $W$. Em particular $(-l)\alpha = -\alpha$ está em $W$. Finalmente se $\alpha$ e $\beta$ estão em $W$, então $\alpha + \beta = 1\alpha + \beta$ está em $W$.
-Assim, $W$ é um subespaço de $V$. \nocite{hoffman1979}
+\noindent\textbf{Demonstração:} Suponhamos que $\vb{W}$ seja um subconjunto não vazio de $\vb{V}$, tal que, $\alpha\vec{u} + \vec{v}$ pertença a $\vb{W}$ para todos os vetores $\vec{u}, \vec{v}$ em $\vb{W}$ e todos escalares $\alpha$ em $\mathbb{R}$. Como $\vb{W}$ é não vazio, existe um vetor $\vec{w}$ em $\vb{W}$, logo $(-1) \vec{w} + \vec{w} = 0$ está em $\vb{W}$. Então se $\vec{u}$ é um vetor arbitrário em $\vb{W}$ e $\alpha$ é um escalar arbitrário, o vetor $\alpha\vec{u} = \alpha\vec{u} + 0$ está em $\vb{W}$. Em particular $(-1)\vec{u} = -\vec{u}$ está em $\vb{W}$. Finalmente se $\vec{u}$ e $\vec{v}$ estão em $\vb{W}$, então $\vec{u} + \vec{v} = 1\vec{u} + \vec{v}$ está em $\vb{W}$.
+Assim, $\vb{W}$ é um subespaço de $\vb{V}$. \nocite{hoffman1979}
 
 \noindent\textbf{Exemplo 04:} Considere o espaço vetorial $\mathbb{R}^3$. O conjunto de todos os vetores que residem no plano $xy$, ou seja, $\{(x, y, 0) \mid x, y \in \mathbb{R}\}$, forma um subespaço vetorial de $\mathbb{R}^3$.
 
