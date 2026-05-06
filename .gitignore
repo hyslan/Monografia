@@ -8,3 +8,8 @@
 *.gz
 *.toc
 *.txss2
+*.idx
+*.tmp
+*.4tc
+*.xref
+*.dvi
