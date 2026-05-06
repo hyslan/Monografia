@@ -1,19 +1,37 @@
+<div align="center">
+
+![GitHub License](https://img.shields.io/github/license/hyslan/Monografia?color=blue)
+![LaTeX](https://img.shields.io/badge/LaTeX-Project-008080?logo=latex&logoColor=white)
+![Subject](https://img.shields.io/badge/Subject-Mathematics-blueviolet)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
+[![Lattes](https://img.shields.io/badge/Lattes-Currículo-yellow)](http://lattes.cnpq.br/7184418017259302)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin)](https://linkedin.com/in/hyslan-silva-cruz)
+</div>
+
+<div align="center">
+
 # Universidade Virtual do Estado de São Paulo
 
 ## Transformações Lineares e Suas Aplicações
 
 Hyslan Silva Cruz
+
 Iara Regina Grilo Papais
+
 Carolina Cristina Ferreira de Mello Pires
 
 Monografia de graduação à Universidade Virtual
 do Estado de São Paulo, como requisito parcial
 para a obtenção do título de Licenciatura em
 Matemática.
+
 Orientadora: Lorena Salvi Stringheta
 
 Suzano
+
 2024
+
+</div>
 
 ## Abstract
 
