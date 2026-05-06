@@ -13,3 +13,11 @@
 *.4tc
 *.xref
 *.dvi
+*.bcf
+*.run.xml
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.ilg
+*.ind
+.vscode/

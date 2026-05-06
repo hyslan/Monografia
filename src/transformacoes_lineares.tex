@@ -8,7 +8,7 @@ Nosso estudo das funções vetoriais lineares em questão, será focado, nas tra
 \begin{enumerate}
 	\item Para quaisquer $\mathbf{u}$ e $\mathbf{v}$ em $\mathbf{V}$, $\mathbf{T}(\mathbf{u} + \mathbf{v}) = \mathbf{T}(u) + \mathbf{T}(v)$.
 	\item Para quaisquer $k \in \mathbb{R}$ e $\mathbf{v} \in \mathbf{V}$, $\mathbf{T}(k\mathbf{v}) = k\mathbf{T}(\mathbf{v})$.
-\end{enumerate}	
+\end{enumerate}
 
 No caso especial em que $\mathbf{V} = \mathbf{W}$, a transformação linear é denominada \textbf{operador linear} do espaço vetorial $\mathbf{V}$ \cite{anton2010elementary}.
 
@@ -20,7 +20,7 @@ Tomemos por dois conjuntos de vetores, $\mathbf{V} = \mathbb{R}^2$ e $\mathbf{W}
 
 Uma transformação de $\mathbf{T}:\mathbb{R}^2\longrightarrow\ \mathbb{R}^3$ associa vetores $\mathbf{v} = (x, y) \in \mathbb{R}^2$ com vetores $\mathbf{w} = (x, y, z) \in \mathbb{R}^3$
 
-\noindent\textbf{Exemplo 11:} Declarado esta transformação linear $\mathbf{T}(x, y) = (x, y, x + y)$. Iremos selecionar alguns vetores em $\mathbb{R}^2$ e calcular suas imagens sob a transformação $\mathbf{T}$. Por exemplo, os vetores $(1, 0)$ e $(0, 1)$. Para $(1, 0)$, temos: 
+\noindent\textbf{Exemplo 11:} Declarado esta transformação linear $\mathbf{T}(x, y) = (x, y, x + y)$. Iremos selecionar alguns vetores em $\mathbb{R}^2$ e calcular suas imagens sob a transformação $\mathbf{T}$. Por exemplo, os vetores $(1, 0)$ e $(0, 1)$. Para $(1, 0)$, temos:
 
 \begin{equation}
 	\mathbf{T}(1, 0) = (1, 0, 1 +0) = (1, 0, 1)
@@ -29,7 +29,7 @@ Uma transformação de $\mathbf{T}:\mathbb{R}^2\longrightarrow\ \mathbb{R}^3$ as
 \noindent e para $(0, 1)$, temos:
 
 \begin{equation}
-\mathbf{T}(0, 1) = (0, 1, 0 + 1) = (0, 1, 1)
+	\mathbf{T}(0, 1) = (0, 1, 0 + 1) = (0, 1, 1)
 \end{equation}
 
 Segue a imagem em $\mathbb{R}^3$:
@@ -45,15 +45,15 @@ Segue a imagem em $\mathbb{R}^3$:
 	% Set B
 	\draw[line width=1pt] (5,0) ellipse (1cm and 2cm);
 	\node[above] at (5,2.2) (B) {$\mathbb{R}^3$};
-	\node[centered] at (5,1) {$(1,0,1)$}; 
+	\node[centered] at (5,1) {$(1,0,1)$};
 	\node[centered] at (5,0) {$(0,1,0)$};
 	\node[centered] at (5,-1) {$(0,0,0)$};
-	
+
 	% Relations
 	\draw[-latex, black] (0.5,1) -- node[midway, above] {$\mathbf{T}$} (4.5,1);
 	\draw[-latex, black] (0.5, 0) -- node[midway, above] {$\mathbf{T}$} (4.5, 0);
 	\draw[-latex, black] (0.5, -1) -- node[midway, above] {$\mathbf{T}$} (4.5, -1);
-	
+
 	% Label
 	\node[below] at (2.5,-2.5) {Uma função $\mathbf{T}: \mathbb{R}^2 \longrightarrow \mathbb{R}^3$ com $\mathbf{T}=\{(x, y, x + y)\}$};
 \end{tikzpicture}
@@ -63,14 +63,14 @@ Segue a imagem em $\mathbb{R}^3$:
 De acordo com o exemplo acima, percebe-se, que será uma função onde o gráfico passa a reta pela origem se supormos uma função afim, $\mathbb{R}^1$ em $\mathbb{R}^1$. Uma transformação linear mantém combinações lineares $W = [\mathbf{v}_1, \ldots, \mathbf{v}_n]$ são vetores que pertencem a $\mathbf{V}$ e possui seus escalares $c_1, \ldots, c_n$, então:
 
 \begin{equation}
-\mathbf{T}(c_1\mathbf{v}_1, \ldots, c_n\mathbf{v}_n) = \mathbf{T}(c_1\mathbf{v}_1 + c_2\mathbf{v}_2) = c_1(\mathbf{T}\mathbf{v}_1) + c_2(\mathbf{T}\mathbf{v}_2)
+	\mathbf{T}(c_1\mathbf{v}_1, \ldots, c_n\mathbf{v}_n) = \mathbf{T}(c_1\mathbf{v}_1 + c_2\mathbf{v}_2) = c_1(\mathbf{T}\mathbf{v}_1) + c_2(\mathbf{T}\mathbf{v}_2)
 \end{equation}
 
 \noindent\textbf{Exemplo 13:} Tomemos um caso que desejamos dobrar nosso espaço vetorial, dado um vetor $\mathbf{V} = (2, 2); \mathbf{V} \in \mathbb{R}^2$, a transformação linear será dada por, $\mathbf{T}(x, y) = (2x, 2y) \in \mathbb{R}^2$. Nosso domínio e contradomínio está em $\mathbb{R}^2$, portanto o resultado será por $\mathbf{W} = (2 \times 2, 2 \times 2) \therefore \mathbf{W} = (4, 4)$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1.30]{t_exemplo13.png}
+	\includegraphics[scale=1.30]{figures/t_exemplo13.png}
 	\caption{Transformação linear dobro de um vetor.}
 \end{figure}
 
@@ -89,24 +89,24 @@ A matriz $\mathbf{R}$ chamada de matriz de rotação, possui algumas propriedade
 
 \begin{enumerate}
 	\item \textbf{Ortogonalidade:} A matriz $\mathbf{R}$ é ortogonal, ou seja sua transporta é inversa:
-	
-	\centerline{$\mathbf{R}^T = \mathbf{R}^{-1}$}
+
+	      \centerline{$\mathbf{R}^T = \mathbf{R}^{-1}$}
 	\item \textbf{Determinante:} O determinante da matriz $\mathbf{R}$ é igual a $-1$.
-	
-	\centerline{$\det(\mathbf{R}) = -1$}
+
+	      \centerline{$\det(\mathbf{R}) = -1$}
 \end{enumerate}
 
 Ao rotacionar um vetor $\mathbf{v} = (x, y)$ em 90 graus  no sentido anti-horário, basta aplicar a matriz de rotação em $\mathbf{v}$.
 
 \begin{equation}
-\mathbf{v}' = \mathbf{R} \times \mathbf{v} = [[-1, 0], [0, -1]] \times [x, y] = [y, -x]
+	\mathbf{v}' = \mathbf{R} \times \mathbf{v} = [[-1, 0], [0, -1]] \times [x, y] = [y, -x]
 \end{equation}
 
 No caso em questão, o operador de rotação de um angulo qualquer como $\theta$ em torno e origem em $\mathbb{R}^2$, tratando-se o operador $\mathbf{R}: \mathbb{R}^2 \longrightarrow \mathbb{R}^2$, resulta em $\mathbf{R}(u + v) = \mathbf{R}(u) + \mathbf{R}(v)$.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.90]{t_rotacao.png}
+	\includegraphics[scale=0.90]{figures/t_rotacao.png}
 	\caption{Transformada de rotação de um vetor \cite{nogueira2013}.}
 \end{figure}
 
@@ -121,7 +121,7 @@ Para $\mathbf{N}(\mathbf{T}) = \{\mathbf{v} \in \frac{\mathbf{V}}{\mathbf{T}(\ma
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1.00]{t_nucleo.png}
+	\includegraphics[scale=1.00]{figures/t_nucleo.png}
 	\caption{Diagrama do núcleo de uma transformação linear \cite{steinbruch1987}.}
 \end{figure}
 
@@ -137,16 +137,16 @@ De acordo com \cite{lang2003}, que, enfatizou a importância do núcleo na compr
 Se $\mathbf{v}_1$ e $\mathbf{v}_2$ pertencem ao núcleo $\mathbf{N}(\mathbf{T})$ e $k$ um número real qualquer. Então, $\mathbf{T}(\mathbf{v}_1) = 0$ e $\mathbf{T}(\mathbf{v}_2) = 0$. Logo:
 
 \begin{equation}
-\mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = 0 + 0 = 0
+	\mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = 0 + 0 = 0
 \end{equation}
 
-\noindent portanto, $\mathbf{v}_1 + \mathbf{v}_2 \in \mathbf{N}(\mathbf{T})$. 
+\noindent portanto, $\mathbf{v}_1 + \mathbf{v}_2 \in \mathbf{N}(\mathbf{T})$.
 
 \noindent\textbf{Exemplo 14:} Dado $\mathbf{T}: \mathbb{R}^2 \longrightarrow \mathbb{R} \mid (x, y) \rightarrow x + y$, o núcleo, que iremos chamar, neste caso, $\ker\mathbf{T}$ é $\ker\mathbf{T} = \{(x, y) \in \mathbb{R}^2; x + y = 0\}$, onde a reta $y = -x$ é $\ker\mathbf{T}$ e $\ker\mathbf{T} = \{(x, -x); x \in \mathbb{R}\} = \{x(1, -1); x \in \mathbb{R}\} = [(1, -1)]$. A imagem da transformação, ou seja, $Im\mathbf{T} = \mathbb{R}$, todavia, um vetor $\mathbf{w} \in \mathbb{R}, \mathbf{w} = \mathbf{T}(\mathbf{w}, 0)$.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1.00]{t_nucleo2.png}
+	\includegraphics[scale=1.00]{figures/t_nucleo2.png}
 	\caption{Imagem de um núcleo de transformação linear \cite{boldrini1980}, pg. 152.}
 \end{figure}
 
@@ -155,7 +155,7 @@ Percebe-se que a imagem de uma transformação é $\mathbf{T}: \mathbf{V} \longr
 Se $\mathbf{w}_1, \mathbf{w}_2 \in Im\mathbf{T}$, existem vetores $\mathbf{v}_1, \mathbf{v}_2 \in \mathbf{V} \mid \mathbf{T}(\mathbf{v}_1) = \mathbf{w}_1$ e $\mathbf{T}(\mathbf{v}_2) = \mathbf{w}_2$. Tendo $\mathbf{v} = \mathbf{v}_1 + \mathbf{v}_2$ e $\mathbf{u} = \alpha\mathbf{v}_1$, logo:
 
 \begin{equation}
-\mathbf{T}(\mathbf{v}) = \mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = \mathbf{w}_1 + \mathbf{w}_2
+	\mathbf{T}(\mathbf{v}) = \mathbf{T}(\mathbf{v}_1 + \mathbf{v}_2) = \mathbf{T}(\mathbf{v}_1) + \mathbf{T}(\mathbf{v}_2) = \mathbf{w}_1 + \mathbf{w}_2
 \end{equation}
 
 \noindent e $\mathbf{T}(\mathbf{u}) = \mathbf{T}(\alpha\mathbf{v}_1) = \alpha\mathbf{T}(\mathbf{v}_1) = \alpha\mathbf{w}_1$, portanto, $Im\mathbf{T}$ é um subespaço vetorial de $\mathbf{W}$.
@@ -170,7 +170,7 @@ Um conceito intrigante surge com o isomorfismo. Uma transformação linear $\mat
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.90]{t_isomorfismo.png}
+	\includegraphics[scale=0.90]{figures/t_isomorfismo.png}
 	\caption{Diagrama do isomorfismo e sua imagem \cite{anton2010elementary}, pg. 445.}
 \end{figure}
 
