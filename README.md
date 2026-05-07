@@ -1,6 +1,6 @@
 <div align="center">
 
-[![GitHub License](https://img.shields.io/github/license/hyslan/Monografia?color=blue)](https://github.com/hyslan/Monografia/blob/main/LICENSE)
+[![GitHub License](https://img.shields.io/github/license/hyslan/Monografia?color=blue)](https://www.gnu.org/licenses/gpl-3.0.html.en)
 [![LaTeX](https://img.shields.io/badge/LaTeX-Project-008080?logo=latex&logoColor=white)](https://www.latex-project.org/)
 ![Subject](https://img.shields.io/badge/Subject-Mathematics-blueviolet)
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
