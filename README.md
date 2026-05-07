@@ -1,7 +1,7 @@
 <div align="center">
 
-![GitHub License](https://img.shields.io/github/license/hyslan/Monografia?color=blue)
-![LaTeX](https://img.shields.io/badge/LaTeX-Project-008080?logo=latex&logoColor=white)
+[![GitHub License](https://img.shields.io/github/license/hyslan/Monografia?color=blue)](https://github.com/hyslan/Monografia/blob/main/LICENSE)
+[![LaTeX](https://img.shields.io/badge/LaTeX-Project-008080?logo=latex&logoColor=white)](https://www.latex-project.org/)
 ![Subject](https://img.shields.io/badge/Subject-Mathematics-blueviolet)
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 [![Lattes](https://img.shields.io/badge/Lattes-Currículo-yellow)](http://lattes.cnpq.br/7184418017259302)
@@ -43,4 +43,4 @@ As Transformações Lineares, essenciais na matemática aplicada, física e enge
 
 ### Visualização Direta
 
-Acesse o arquivo PDF diretamente para uma leitura mais fluida: [Monografia.pdf](src/out/main.pdf)
+Acesse o arquivo PDF diretamente para uma leitura mais fluida: [Monografia](src/out/main.pdf)
